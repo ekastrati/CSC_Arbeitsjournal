@@ -1,0 +1,6 @@
+c:\users\ekastrati\documents\visual studio 2013\Projects\Arbeitsjournal\Arbeitsjournal\bin\Arbeitsjournal.dll.config
+c:\users\ekastrati\documents\visual studio 2013\Projects\Arbeitsjournal\Arbeitsjournal\bin\Arbeitsjournal.dll
+c:\users\ekastrati\documents\visual studio 2013\Projects\Arbeitsjournal\Arbeitsjournal\bin\Arbeitsjournal.pdb
+c:\users\ekastrati\documents\visual studio 2013\Projects\Arbeitsjournal\Arbeitsjournal\obj\Debug\Arbeitsjournal.csprojResolveAssemblyReference.cache
+c:\users\ekastrati\documents\visual studio 2013\Projects\Arbeitsjournal\Arbeitsjournal\obj\Debug\Arbeitsjournal.dll
+c:\users\ekastrati\documents\visual studio 2013\Projects\Arbeitsjournal\Arbeitsjournal\obj\Debug\Arbeitsjournal.pdb
