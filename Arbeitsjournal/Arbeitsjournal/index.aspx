@@ -15,7 +15,7 @@
     </script>
 </head>
 <body>
-    <!-- Header Dinbindung -->
+    <!-- Header Einbindung -->
     <div id="header_loggedIn"></div>
     <div id="dashboard_profile"><div class="boxInnerhalb">blabla</div></div>
     <div id="dashboard_letzteArbeitsjournale"><div class="boxInnerhalb">blabla</div></div>

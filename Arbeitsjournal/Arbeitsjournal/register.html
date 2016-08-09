@@ -11,14 +11,26 @@
     </script>
 </head>
 <body>
-    <form id="frmRegister">
-        <input id="username" type="text" maxlength="20" placeholder="Username" />
-        <input id="email" type="text" maxlength="20" placeholder="Email" />
-        <input id="password" type="text" maxlength="20" placeholder="Password" />
-        <input id="prename" type="text" maxlength="20" placeholder="Vorname" />
-        <input id="name" type="text" maxlength="20" placeholder="Nachname" />
-        <input id="repeatPassword" type="text" maxlength="20" placeholder="Repeat Password" />
-        <input id="speichern" type="submit" />
-    </form>
+    <div id="header_loggedIn"></div>
+    <div id="containerNebenMenu">
+        <form id="frmRegister">
+            <label for="username">Username:</label>
+            <input id="username" type="text" maxlength="20" placeholder="Username" />
+            <label for="prename">Vorname:</label>
+            <input id="prename" type="text" maxlength="20" placeholder="Vorname" />
+            <br />
+            <label for="email">Email:</label>
+            <input id="email" type="text" maxlength="20" placeholder="Email" />
+            <label for="name">Nachname:</label>
+            <input id="name" type="text" maxlength="20" placeholder="Nachname" />
+            <br />
+            <label for="password">Passwort:</label>
+            <input id="password" type="text" maxlength="20" placeholder="Password" />
+            <label for="repeatPassword">Passwort Wiederholen:</label>
+            <input id="repeatPassword" type="text" maxlength="20" placeholder="Repeat Password" />
+            <br />
+            <input id="speichern" type="submit" />
+        </form>
+    </div>
 </body>
 </html>

@@ -6,6 +6,10 @@ div {
     display: block;
 }
 
+#containerNebenMenu{
+    margin-left: 300px;
+}
+
 #title{
     padding-left: 20px;
 }
