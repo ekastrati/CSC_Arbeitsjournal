@@ -68,6 +68,8 @@
     <Content Include="index.aspx" />
     <Content Include="mainscript.js" />
     <Content Include="index.html" />
+    <Content Include="meineBeitraege.aspx" />
+    <Content Include="meineBeitraege.css" />
     <Content Include="StyleSheet.css" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -80,6 +82,13 @@
       <DependentUpon>index.aspx</DependentUpon>
     </Compile>
     <Compile Include="Main.cs" />
+    <Compile Include="meineBeitraege.aspx.cs">
+      <DependentUpon>meineBeitraege.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="meineBeitraege.aspx.designer.cs">
+      <DependentUpon>meineBeitraege.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <PropertyGroup>
