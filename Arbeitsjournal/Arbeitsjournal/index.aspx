@@ -10,20 +10,20 @@
     <title>Arbeitsjournal</title>
 </head>
 <body>
-    <form id="form1" runat="server" action="index.aspx" enctype="text/plain" method="post">
-        <div>
-            <h1>Arbeitsjournal</h1>
-            <div id="divMenu">
-                <menu>
-                    <nav>
-                        <ul>
-                            <li><a href="https://www.google.ch/?gws_rd=ssl">Startseite</a></li>
-                            <li><a href="https://www.google.ch/?gws_rd=ssl">Startseite</a></li>
-                        </ul>
-                    </nav>
-                </menu>
-            </div>
+    <h1>Arbeitsjournal</h1>
+    <div>
+        <div id="divMenu">
+            <menu>
+                <nav>
+                    <ul>
+                        <li><a href="https://www.google.ch/?gws_rd=ssl">Startseite</a></li>
+                        <li><a href="https://www.google.ch/?gws_rd=ssl">Startseite</a></li>
+                    </ul>
+                </nav>
+            </menu>
         </div>
+    </div>
+    <form id="form1" runat="server" action="index.aspx" enctype="text/plain" method="post">
     </form>
 </body>
 </html>
