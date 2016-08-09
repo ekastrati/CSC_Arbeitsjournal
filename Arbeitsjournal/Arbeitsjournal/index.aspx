@@ -5,7 +5,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta content="JavaScript" name="mainscript" />
-    <link rel="stylesheet" href="StyleSheet.css" />
+    <link rel="stylesheet" href="IndexStyleSheet.css" />
 
     <title>Arbeitsjournal</title>
 </head>
