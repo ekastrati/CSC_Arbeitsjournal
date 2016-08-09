@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Registrieren</title>
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+        $(function () {
+            $("#header_loggedIn").load("header_loggedIn.html");
+        });
+    </script>
+</head>
+<body>
+    <form id="frmRegister">
+        <input id="username" type="text" maxlength="20" placeholder="Username" />
+        <input id="email" type="text" maxlength="20" placeholder="Email" />
+        <input id="password" type="text" maxlength="20" placeholder="Password" />
+        <input id="prename" type="text" maxlength="20" placeholder="Vorname" />
+        <input id="name" type="text" maxlength="20" placeholder="Nachname" />
+        <input id="repeatPassword" type="text" maxlength="20" placeholder="Repeat Password" />
+        <input id="speichern" type="submit" />
+    </form>
+</body>
+</html>

@@ -35,6 +35,29 @@ div {
     margin-bottom: 10px;
 }
 
+/* dashboard Boxen */
+#dashboard_profile{
+    margin-left: 300px;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 2px;
+    width: 400px;
+    height: 250px;
+}
+
+#dashboard_letzteArbeitsjournale{
+
+}
+
+#dashboard_neuePosts{
+
+}
+
+/* Das ist die Box in den kleinen Kästchen */
+.boxInnerhalb{
+    padding: 10px;
+}
+
 #divMenu {
     border-bottom-color: pink;
     border-style: solid;
