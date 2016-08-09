@@ -57,6 +57,11 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="MDL\bower.json" />
+    <Content Include="MDL\LICENSE" />
+    <Content Include="MDL\material.min.css.map" />
+    <Content Include="MDL\material.min.js.map" />
+    <Content Include="MDL\package.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -67,7 +72,11 @@
   <ItemGroup>
     <Content Include="index.aspx" />
     <Content Include="mainscript.js" />
-    <Content Include="StyleSheet.css" />
+    <Content Include="MDL\material.css" />
+    <Content Include="MDL\material.js" />
+    <Content Include="MDL\material.min.css" />
+    <Content Include="MDL\material.min.js" />
+    <Content Include="IndexStyleSheet.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
