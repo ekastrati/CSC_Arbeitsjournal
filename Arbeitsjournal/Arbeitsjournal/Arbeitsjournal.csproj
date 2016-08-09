@@ -57,6 +57,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="header_loggedIn.html" />
     <Content Include="MDL\bower.json" />
     <Content Include="MDL\LICENSE" />
     <Content Include="MDL\material.min.css.map" />
