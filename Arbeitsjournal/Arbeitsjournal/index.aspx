@@ -10,17 +10,25 @@
 </head>
 <body>
     <h1>Arbeitsjournal</h1>
-    <div>
-        <div id="divMenu">
+    <div id="divMenu">
+        <nav>
             <menu>
-                <nav>
-                    <ul>
-                        <li><a href="https://www.google.ch/?gws_rd=ssl">Startseite</a></li>
-                        <li><a href="https://www.google.ch/?gws_rd=ssl">Startseite</a></li>
-                    </ul>
-                </nav>
+                <ul>
+                    <li>
+                        <a class="menuLinks" href="https://www.google.ch/?gws_rd=ssl"><div class="linkumrandungDashboard"> Dashboard</div></a>
+                    </li>
+                    <li>
+                        <a class="menuLinks" href="https://www.google.ch/?gws_rd=ssl"><div class="linkumrandungMeineBeiträge"> Meine Beiträge</div></a>
+                    </li>
+                    <li>
+                        <a class="menuLinks" href="https://www.google.ch/?gws_rd=ssl"><div class="linkumrandungMitarbeiter"> Mitarbeiter</div></a>
+                    </li>
+                    <li>
+                        <a class="menuLinks" href="https://www.google.ch/?gws_rd=ssl"><div class="linkumrandungProfil"> Profil</div></a>
+                    </li>
+                </ul>
             </menu>
-        </div>
+        </nav>
     </div>
     <form id="form1" runat="server" action="index.aspx" enctype="text/plain" method="post">
     </form>

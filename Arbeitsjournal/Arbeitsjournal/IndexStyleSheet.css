@@ -1,43 +1,95 @@
 ﻿body {
-
 }
 
-#divMenu{
-    border-bottom-color: gainsboro;
+
+div {
+    display: block;
+}
+
+#divMenu {
+    border-bottom-color: pink;
     border-style: solid;
     border-width: thin;
-    width: 200px;
+    width: 250px;
+    height: 100%;
+    float: left;
+    position: absolute;
 }
 
 menu {
     border-color: azure;
     border-width: medium;
+    position: absolute;
 }
 
 nav {
-	width: 100%;
-    border-color: #b73766;
-    border-width: 200px;
+    list-style: none;
 }
 
-nav ul {
-	list-style: none;
-	border-color: #b73766;
-    border-width: medium;
-	height: 28px;
-}
+    nav ul {
+        list-style: none;
+        border-color: #b73766;
+        border-width: medium;
+        height: 28px;
+    }
 
-nav ul li {
-	padding: 0px;
-	border-color: #b73766;
-    border-width: medium;
-}
+        nav ul li {
+            margin-left: -80px;
+            list-style: none;
+            padding: 0px;
+            border-color: #b73766;
+            border-width: medium;
+            list-style: none;
+        }
 
-nav ul li a {
-	padding: 5px;
-	margin: 0;
+    nav menu ul li a {
+        color: black;
+        text-decoration: none;
+    }
+
+/* Klasse für <a> tags */
+a.menuLinks {
+    white-space: nowrap !important;
 }
 
 nav li:hover a {
-	color: white;
+    color: cadetblue;
 }
+
+nav menu ul li a div{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* Link div hover vom Menü */
+nav menu ul li a div:hover{
+        border-color: #ee2525;
+    border-style: solid;
+    border-radius: 6px;
+}
+
+.linkumrandungDashboard {
+    width: 250px;
+    margin-top: -10px;
+    background-color: white;
+}
+
+.linkumrandungMeineBeiträge {
+    width: 250px;
+    margin: 0px;
+    background-color: white;
+}
+
+.linkumrandungMitarbeiter {
+    width: 250px;
+    margin: 0px;
+    background-color: white;
+}
+
+.linkumrandungProfil {
+    width: 250px;
+    margin: 0px;
+    background-color: white;
+}
+
+
