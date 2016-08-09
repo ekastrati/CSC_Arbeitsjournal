@@ -2,28 +2,40 @@
 
 }
 
+#divMenu{
+    border-bottom-color: gainsboro;
+    border-style: solid;
+    border-width: thin;
+    width: 200px;
+}
+
+menu {
+    border-color: azure;
+    border-width: medium;
+}
+
 nav {
 	width: 100%;
-	background: #2c5463;
+    border-color: #b73766;
+    border-width: 200px;
 }
 
 nav ul {
 	list-style: none;
-	background-color: #2C5463;
+	border-color: #b73766;
+    border-width: medium;
 	height: 28px;
 }
 
 nav ul li {
-	float: left;
 	padding: 0px;
-	background: #2c5463;
+	border-color: #b73766;
+    border-width: medium;
 }
 
 nav ul li a {
 	padding: 5px;
 	margin: 0;
-	display: block;
-	padding-right: 26px;
 }
 
 nav li:hover a {

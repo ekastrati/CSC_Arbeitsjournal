@@ -67,7 +67,6 @@
   <ItemGroup>
     <Content Include="index.aspx" />
     <Content Include="mainscript.js" />
-    <Content Include="index.html" />
     <Content Include="StyleSheet.css" />
     <Content Include="Web.config" />
   </ItemGroup>
