@@ -3,7 +3,7 @@
 
 div.mainDiv {
     margin-left: 300px;
-    margin-top: 100px;
+    margin-top: 50px;
     margin-right: 100px;
     height: auto;
     width: auto;
@@ -44,6 +44,7 @@ div.beitragDiv {
 
     div.beitragDiv h1 {
         font-size: 24px;
+        margin-top:20px;
     }
 
     div.beitragDiv p {
