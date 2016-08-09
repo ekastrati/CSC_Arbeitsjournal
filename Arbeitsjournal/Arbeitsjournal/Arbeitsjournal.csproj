@@ -79,6 +79,7 @@
     <Content Include="MDL\material.min.js" />
     <Content Include="IndexStyleSheet.css" />
     <Content Include="register.html" />
+    <Content Include="RegisterStyleSheet.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

@@ -14,20 +14,29 @@
     <div id="header_loggedIn"></div>
     <div id="containerNebenMenu">
         <form id="frmRegister">
-            <label for="username">Username:</label>
-            <input id="username" type="text" maxlength="20" placeholder="Username" />
-            <label for="prename">Vorname:</label>
-            <input id="prename" type="text" maxlength="20" placeholder="Vorname" />
+            <div class="inputContainer">
+                <label for="username">Username:</label>
+                <input id="username" type="text" maxlength="20" placeholder="Username" />
+
+                <label for="prename">Vorname:</label>
+                <input id="prename" type="text" maxlength="20" placeholder="Vorname" />
+            </div>
             <br />
-            <label for="email">Email:</label>
-            <input id="email" type="text" maxlength="20" placeholder="Email" />
-            <label for="name">Nachname:</label>
-            <input id="name" type="text" maxlength="20" placeholder="Nachname" />
+            <div class="inputContainer">
+                <label for="email">Email:</label>
+                <input id="email" type="text" maxlength="20" placeholder="Email" />
+
+                <label for="name">Nachname:</label>
+                <input id="name" type="text" maxlength="20" placeholder="Nachname" />
+            </div>
             <br />
-            <label for="password">Passwort:</label>
-            <input id="password" type="text" maxlength="20" placeholder="Password" />
-            <label for="repeatPassword">Passwort Wiederholen:</label>
-            <input id="repeatPassword" type="text" maxlength="20" placeholder="Repeat Password" />
+            <div class="inputContainer">
+                <label for="password">Passwort:</label>
+                <input id="password" type="text" maxlength="20" placeholder="Password" />
+
+                <label for="repeatPassword">Passwort Wiederholen:</label>
+                <input id="repeatPassword" type="text" maxlength="20" placeholder="Repeat Password" />
+            </div>
             <br />
             <input id="speichern" type="submit" />
         </form>

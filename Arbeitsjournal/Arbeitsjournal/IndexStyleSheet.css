@@ -8,6 +8,8 @@ div {
 
 #containerNebenMenu{
     margin-left: 300px;
+    width: 1000px;
+    white-space: nowrap !important;
 }
 
 #title{

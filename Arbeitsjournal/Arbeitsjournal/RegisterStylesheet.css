@@ -4,5 +4,6 @@
 
 /* Das sind inputContainer für die Eingabefelder in der Registrierungsseite */
 .inputContainer{
-    width: 200px;
+    width: 400px !important;
+
 }
