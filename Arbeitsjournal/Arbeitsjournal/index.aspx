@@ -7,21 +7,17 @@
     <meta content="JavaScript" name="mainscript" />
     <link rel="stylesheet" href="IndexStyleSheet.css" />
     <title>Arbeitsjournal</title>
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script>
+    $(function () {
+        $("#header_loggedIn").load("header_loggedIn.html");
+    });
+</script> 
 </head>
-<body>
-    <h1>Arbeitsjournal</h1>
-    <div>
-        <div id="divMenu">
-            <menu>
-                <nav>
-                    <ul>
-                        <li><a href="https://www.google.ch/?gws_rd=ssl">Startseite</a></li>
-                        <li><a href="https://www.google.ch/?gws_rd=ssl">Startseite</a></li>
-                    </ul>
-                </nav>
-            </menu>
-        </div>
-    </div>
+    <body>
+        <!-- Header Dinbindung -->
+    <div id="header_loggedIn"></div>
+
     <form id="form1" runat="server" action="index.aspx" enctype="text/plain" method="post">
     </form>
 </body>

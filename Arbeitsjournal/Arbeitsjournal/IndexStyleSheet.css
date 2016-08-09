@@ -1,43 +1,126 @@
 ﻿body {
-
+    font-family: sans-serif;
 }
 
-#divMenu{
-    border-bottom-color: gainsboro;
+div {
+    display: block;
+}
+
+#title{
+    padding-left: 20px;
+}
+
+#titleOfEachSite{
+    margin-left: 300px;
+}
+
+/* Wer angemeldet ist: z.B.: Willkommen Endrit */
+#loginInformation{
+    float: right;
+    margin-right: 20px;
+}
+
+#abmelden{
+    float: right;
+}
+
+#header{
+    margin-top: 20px;
+    vertical-align: top;
+    height: 50px;
+    width: 100%;
+    border-top: inset;
+    border-bottom: solid;
+    padding-top: 20px;
+    margin-bottom: 10px;
+}
+
+#divMenu {
+    border-bottom-color: pink;
     border-style: solid;
     border-width: thin;
-    width: 200px;
+    width: 250px;
+    height: 100%;
+    float: left;
+    position: absolute;
 }
 
 menu {
     border-color: azure;
     border-width: medium;
+    position: absolute;
 }
 
 nav {
-	width: 100%;
-    border-color: #b73766;
-    border-width: 200px;
+    list-style: none;
 }
 
-nav ul {
-	list-style: none;
-	border-color: #b73766;
-    border-width: medium;
-	height: 28px;
-}
+    nav ul {
+        list-style: none;
+        border-color: #b73766;
+        border-width: medium;
+        height: 28px;
+    }
 
-nav ul li {
-	padding: 0px;
-	border-color: #b73766;
-    border-width: medium;
-}
+        nav ul li {
+            margin-left: -80px;
+            list-style: none;
+            padding: 0px;
+            border-color: #b73766;
+            border-width: medium;
+            list-style: none;
+        }
 
-nav ul li a {
-	padding: 5px;
-	margin: 0;
+    nav menu ul li a {
+        color: black;
+        text-decoration: none;
+    }
+
+/* Klasse für <a> tags */
+a.menuLinks {
+    white-space: nowrap !important;
 }
 
 nav li:hover a {
-	color: white;
+    color: plum;
+}
+
+nav menu ul li a div{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* Link div hover vom Menü */
+nav menu ul li a div:hover{
+    border-color: #ee2525;
+    border-style: solid;
+    border-radius: 6px;
+}
+
+.linkumrandungDashboard {
+    width: 235px;
+    margin-top: -10px;
+    background-color: white;
+    padding-left: 10px;
+}
+
+.linkumrandungMeineBeiträge {
+    margin: 0px;
+    width: 235px;
+    background-color: white;
+    padding-left: 10px;
+}
+
+.linkumrandungMitarbeiter {
+    margin: 0px;
+    width: 235px;
+    background-color: white;
+    padding-left: 10px;
+}
+
+.linkumrandungProfil {
+    margin: 0px;
+    width: 235px;
+    background-color: white;
+    padding-left: 10px;
 }
