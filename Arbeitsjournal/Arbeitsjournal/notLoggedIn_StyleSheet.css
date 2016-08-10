@@ -3,6 +3,7 @@
 }
 
 nav {
+    /*
     background-color: black;
     width: 100%;
     border-color: yellow;
@@ -10,6 +11,11 @@ nav {
     margin-bottom: 120px;
     height: 60px;
     margin-left: 0px;
+        */
+}
+
+#home{
+    background-color: #88BA41;
 }
 
 nav menu ul{
@@ -23,25 +29,27 @@ nav menu ul li{
 nav menu ul li a{
     text-decoration: none;
     color: white;
-    padding: 0px 100px;
 }
 
 .menuItemUmrandung{
     padding: 0px;
     margin: 0px;
-    border-radius: 5px;
-    border-left: solid;
-    border-right: solid;
-    border-color: white;
+    border-radius: 6px;
+    border-style: solid;
+    border-color: #ef2525;
+    border-width: 5px;
+    border-left-width: 2px;
+    border-right-width: 2px;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
     background-color: black;
+    margin-top: -16px;
 }
 
 #notLoggedInMenu{
+    display: table;
     background-color: black;
     width: 100%;
-    border-color: yellow;
-    border-style: solid;
-    height: 60px;
     margin-bottom: 120px;
 }
 
@@ -52,14 +60,23 @@ nav menu ul li a{
 }
 
 a.menuLinks {
-
+     display: table;
+     padding: 20px 100px;
 }
 
 .titelUmrandung {
     padding: 20px;
     border-radius: 5px;
-    border-left: solid;
-    border-right: solid;
-    border-color: white;
-    background-color: gray;
+    border: solid;
+    border-right-width: 0px;
+    border-color: #ef2525;
+    background-color: #ef2525;
+    margin-top: -16px;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
 }
+
+#websiteName{
+    color: white;
+}
+
