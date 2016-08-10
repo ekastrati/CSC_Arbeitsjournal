@@ -3,7 +3,6 @@
 
 strong{
     color: white;
-    text-decoration
 }
 
 #header {
@@ -18,6 +17,6 @@ strong{
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ef2525', endColorstr='#820000',GradientType=1 ); /* IE6-9 */
 }
 
-.linearGraientFromTop{
-
+.menuLinks{
+    box-shadow: 1px 1px 5px 0 black;
 }

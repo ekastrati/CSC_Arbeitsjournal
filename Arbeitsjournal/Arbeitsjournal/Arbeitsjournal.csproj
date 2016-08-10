@@ -60,6 +60,7 @@
     <Content Include="header_loggedIn.html" />
     <Content Include="header_notLoggedIn.html" />
     <Content Include="header_StyleSheet.css" />
+    <Content Include="Impressum.aspx" />
     <Content Include="MDL\bower.json" />
     <Content Include="MDL\LICENSE" />
     <Content Include="MDL\material.min.css.map" />
@@ -90,6 +91,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Impressum.aspx.cs">
+      <DependentUpon>Impressum.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Impressum.aspx.designer.cs">
+      <DependentUpon>Impressum.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
