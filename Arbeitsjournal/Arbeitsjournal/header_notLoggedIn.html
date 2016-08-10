@@ -13,7 +13,7 @@
             var currentLocation = window.location.href;
             currentLocation = currentLocation.replace('http://localhost:50936/', '');
             console.log(currentLocation);
-            if (currentLocation.indexOf('register') !== -1) {
+            if (currentLocation.indexOf('Register') !== -1) {
                 var element = document.getElementById(registrieren);
                 getClick(element);
             }
@@ -44,7 +44,7 @@
                     </li>
                     <li class="menuItemUmrandung" id="registrieren">
                         <div id="registerMenu" tabindex="2" onclick="getClick(this);">
-                            <a class="menuLinks" href="register.aspx"><center>Registrieren</center></a>
+                            <a class="menuLinks" href="Register.aspx"><center>Registrieren</center></a>
                         </div>
                     </li>
                     <li class="menuItemUmrandung" id="anmelden">
