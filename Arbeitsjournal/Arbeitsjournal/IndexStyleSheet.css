@@ -8,7 +8,7 @@ div {
 
 #containerNebenMenu{
     margin-left: 300px;
-    width: 1000px;
+    width: auto;
     white-space: nowrap !important;
 }
 

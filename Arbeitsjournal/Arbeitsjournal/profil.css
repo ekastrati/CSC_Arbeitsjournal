@@ -1,0 +1,169 @@
+﻿body {
+}
+
+#profilDiv {
+    height: 200px;
+    width: 1000px;
+    margin-left: 320px;
+    margin-top: -10px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+    border-radius: 7px;
+}
+
+    #profilDiv h1 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+#benutzernameDiv {
+    height: 50px;
+    width: 200px;
+    border-right-style: solid;
+    border-right-width: 3px;
+    border-right-color: black;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: black;
+    margin-top: 0px;
+    position: absolute;
+}
+
+#vornameDiv {
+    height: 50px;
+    width: 200px;
+    border-right-style: solid;
+    border-right-width: 3px;
+    border-right-color: black;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: black;
+    margin-top: 50px;
+    position: absolute;
+}
+
+#nachnameDiv {
+    height: 50px;
+    width: 200px;
+    border-right-style: solid;
+    border-right-width: 3px;
+    border-right-color: black;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: black;
+    position: absolute;
+    margin-top: 100px;
+}
+
+#emailDiv {
+    height: 50px;
+    width: 200px;
+    border-right-style: solid;
+    border-right-width: 3px;
+    border-right-color: black;
+    position: absolute;
+    margin-top: 150px;
+}
+
+#benutzername {
+    height: 50px;
+    width: 800px;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: black;
+    margin-left: 200px;
+    position: absolute;
+    text-align: right;
+}
+
+#vorname {
+    height: 50px;
+    width: 800px;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: black;
+    margin-left: 200px;
+    position: absolute;
+    margin-top: 50px;
+    text-align: right;
+}
+
+#nachname {
+    height: 50px;
+    width: 800px;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: black;
+    margin-left: 200px;
+    position: absolute;
+    margin-top: 100px;
+    text-align: right;
+}
+
+#email {
+    height: 50px;
+    width: 800px;
+    margin-left: 200px;
+    position: absolute;
+    margin-top: 150px;
+    text-align: right;
+}
+
+#abonniert {
+    margin-left: 300px;
+    font-size: 22px;
+}
+
+#abonniertDiv {
+    height: 300px;
+    width: 1000px;
+    margin-left: 320px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+    border-radius: 7px;
+    position: absolute;
+    overflow-y: auto;
+    overflow-x: hidden;
+    direction: rtl;
+}
+
+#abonniertDiv strong{
+    float:left;
+    margin-top: 20px;
+    margin-left:50px;
+}
+
+.abonniertInhalt {
+    height: 50px;
+    width: 1000px;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: black;
+}
+
+    .abonniertInhalt button {
+        margin-top: 5px;
+        margin-right: 25px;
+        border-radius: 9px;
+        font-family: Arial;
+        color: #ffffff;
+        font-size: 20px;
+        background: #ef2525;
+        padding: 5px 5px 5px 5px;
+        border: solid #ef2525 2px;
+        text-decoration: none;
+    }
+
+    .abonniertInhalt button:hover {
+        background: #ff2626;
+        text-decoration: none;
+    }
+
+#abonniertButtons {
+    width: 200px;
+    border-left-style: solid;
+    border-left-width: 2px;
+    border-left-color: black;
+}

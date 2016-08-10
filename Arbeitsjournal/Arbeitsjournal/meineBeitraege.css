@@ -20,9 +20,10 @@ div.mainDiv {
         font-family: Arial;
         color: #ffffff;
         font-size: 16px;
-        background: #ee2525;
+        background: #ef2525;
         padding: 5px 10px 5px 10px;
         border-radius: 8px;
+        border-color:#ef2525;
         text-decoration: none;
     }
 

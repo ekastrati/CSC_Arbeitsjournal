@@ -16,39 +16,39 @@
 </head>
 <body>
     <div id="header_loggedIn"></div>
-        <div class="mainDiv">
-            <h1>Arbeitsjournal: Simon Roth</h1>
-            <button>Neuer Beitrag</button>
-            <div class="beitragDiv">
-                <h1>Beitrag vom 08.08.2016</h1>
-                <p>
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+    <h1 id="titleOfEachSite">Arbeitsjournal: Simon Roth</h1>
+    <div class="mainDiv">
+        <button>Neuer Beitrag</button>
+        <div class="beitragDiv">
+            <h1>Beitrag vom 08.08.2016</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
                      erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus
                      est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
                      et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
                      takimata sanctus est Lorem ipsum dolor sit amet.
+            </p>
+            <div class="kommentarDiv">
+                <h1>Kommentar von Freddy</h1>
+                <h2>Montag 08.08.2016</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+                     erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus
+                     est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+                     et dolore magna aliquyam erat, sed diam voluptua.
                 </p>
-                <div class="kommentarDiv">
-                    <h1>Kommentar von Freddy</h1>
-                    <h2>Montag 08.08.2016</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            </div>
+            <div class="kommentarDiv">
+                <h1>Kommentar von Endrit</h1>
+                <h2>Montag 08.08.2016</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
                      erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus
                      est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
                      et dolore magna aliquyam erat, sed diam voluptua.
-                    </p>
-                </div>
-                <div class="kommentarDiv">
-                    <h1>Kommentar von Endrit</h1>
-                    <h2>Montag 08.08.2016</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-                     erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus
-                     est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-                     et dolore magna aliquyam erat, sed diam voluptua.
-                    </p>
-                </div>
+                </p>
             </div>
         </div>
+    </div>
 </body>
 </html>
