@@ -4,6 +4,17 @@
 
 /* Das sind inputContainer für die Eingabefelder in der Registrierungsseite */
 .inputContainer{
-    width: 400px !important;
+    width: 1000px !important;
+    height: 20px;
+}
 
+/* Das ist der InputContainer des InputContainers */
+.containerDesInputContainers{
+    width: 250px;
+    float: left;
+    margin-left: 100px;
+}
+
+.registrierenButtonAlignMitte{
+    align-items: center;
 }
