@@ -1,0 +1,100 @@
+﻿body {
+}
+
+#abonniertDiv {
+    height: 600px;
+    width: 250px;
+    margin-left: 320px;
+    margin-top: -10px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+    border-radius: 7px;
+    position: absolute;
+}
+
+    #abonniertDiv h1 {
+        font-size: 24px;
+        margin-left: 20px;
+    }
+
+#mitarbeiterDiv {
+    height: 600px;
+    width: 750px;
+    margin-left: 600px;
+    margin-top: -10px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+    border-radius: 7px;
+    position: absolute;
+}
+
+    #mitarbeiterDiv h1 {
+        font-size: 24px;
+        margin-left: 20px;
+    }
+
+#abonniertDropdown {
+    height: 470px;
+    width: 205px;
+    margin-left: 20px;
+    margin-top: -10px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+    border-radius: 7px;
+    position: absolute;
+}
+
+#mitarbeiterBeitrag {
+    height: 525px;
+    width: 705px;
+    margin-left: 20px;
+    margin-top: -10px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+    border-radius: 7px;
+    position: absolute;
+}
+
+#abonniertDiv button {
+    margin-top: 482px;
+    margin-left: 65px;
+    border-radius: 9px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    background: #ef2525;
+    padding: 5px 5px 5px 5px;
+    border: solid #ef2525 2px;
+    text-decoration: none;
+}
+
+
+#abonniertDiv button:hover {
+        background: #ff2626;
+        text-decoration: none;
+    }
+
+
+#mitarbeiterDiv button {
+    margin-top: 5px;
+    margin-left: 585px;
+    border-radius: 9px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    background: #ef2525;
+    padding: 5px 3px 5px 3px;
+    border: solid #ef2525 2px;
+    text-decoration: none;
+    position:absolute;
+}
+
+
+#mitarbeiterDiv button:hover {
+        background: #ff2626;
+        text-decoration: none;
+    }

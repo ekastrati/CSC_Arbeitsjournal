@@ -81,6 +81,8 @@
     <Content Include="IndexStyleSheet.css" />
     <Content Include="meineBeitraege.aspx" />
     <Content Include="meineBeitraege.css" />
+    <Content Include="mitarbeiter.aspx" />
+    <Content Include="mitarbeiter.css" />
     <Content Include="notLoggedIn_StyleSheet.css" />
     <Content Include="profil.aspx" />
     <Content Include="profil.css" />
@@ -103,6 +105,13 @@
     </Compile>
     <Compile Include="meineBeitraege.aspx.designer.cs">
       <DependentUpon>meineBeitraege.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mitarbeiter.aspx.cs">
+      <DependentUpon>mitarbeiter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mitarbeiter.aspx.designer.cs">
+      <DependentUpon>mitarbeiter.aspx</DependentUpon>
     </Compile>
     <Compile Include="profil.aspx.cs">
       <DependentUpon>profil.aspx</DependentUpon>
