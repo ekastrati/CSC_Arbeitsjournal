@@ -22,7 +22,8 @@ div.leftbar{
 
 #containerNebenMenu{
     margin-left: 300px;
-    width: 1040px;
+    min-width: 1024px;
+    width: auto;
     white-space: nowrap !important;
 }
 
