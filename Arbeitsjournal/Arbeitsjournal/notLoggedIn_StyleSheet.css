@@ -18,6 +18,18 @@ nav {
     background-color: #88BA41;
 }
 
+#impressum{
+    background-color: #850057;
+}
+
+#registrieren{
+    background-color: #588BA3;
+}
+
+#anmelden{
+    background-color: #003F60;
+}
+
 nav menu ul{
     list-style: none;
 }
@@ -79,4 +91,3 @@ a.menuLinks {
 #websiteName{
     color: white;
 }
-
