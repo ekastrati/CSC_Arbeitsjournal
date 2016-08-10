@@ -82,6 +82,7 @@
     <Content Include="IndexStyleSheet.css" />
     <Content Include="notLoggedIn_StyleSheet.css" />
     <Content Include="blabla.html" />
+    <Content Include="Passwort.aspx" />
     <Content Include="ProfilBearbeiten.aspx" />
     <Content Include="ProfilBearbeiten_StyleSheet.css" />
     <Content Include="Register.aspx" />
@@ -97,6 +98,13 @@
       <DependentUpon>Index.aspx</DependentUpon>
     </Compile>
     <Compile Include="Main.cs" />
+    <Compile Include="Passwort.aspx.cs">
+      <DependentUpon>Passwort.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Passwort.aspx.designer.cs">
+      <DependentUpon>Passwort.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ProfilBearbeiten.aspx.cs">
       <DependentUpon>ProfilBearbeiten.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
