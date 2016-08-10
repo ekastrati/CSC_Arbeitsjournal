@@ -1,0 +1,65 @@
+﻿body {
+    font-family: sans-serif;
+}
+
+nav {
+    background-color: black;
+    width: 100%;
+    border-color: yellow;
+    border-style: solid;
+    margin-bottom: 120px;
+    height: 60px;
+    margin-left: 0px;
+}
+
+nav menu ul{
+    list-style: none;
+}
+
+nav menu ul li{
+    float: left;
+}
+
+nav menu ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 0px 100px;
+}
+
+.menuItemUmrandung{
+    padding: 0px;
+    margin: 0px;
+    border-radius: 5px;
+    border-left: solid;
+    border-right: solid;
+    border-color: white;
+    background-color: black;
+}
+
+#notLoggedInMenu{
+    background-color: black;
+    width: 100%;
+    border-color: yellow;
+    border-style: solid;
+    height: 60px;
+    margin-bottom: 120px;
+}
+
+#containerNebenMenu{
+    margin-left: 300px;
+    width: 1000px;
+    white-space: nowrap !important;
+}
+
+a.menuLinks {
+
+}
+
+.titelUmrandung {
+    padding: 20px;
+    border-radius: 5px;
+    border-left: solid;
+    border-right: solid;
+    border-color: white;
+    background-color: gray;
+}

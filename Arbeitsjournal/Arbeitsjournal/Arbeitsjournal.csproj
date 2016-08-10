@@ -58,6 +58,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="header_loggedIn.html" />
+    <Content Include="header_notLoggedIn.html" />
     <Content Include="MDL\bower.json" />
     <Content Include="MDL\LICENSE" />
     <Content Include="MDL\material.min.css.map" />
@@ -78,6 +79,7 @@
     <Content Include="MDL\material.min.css" />
     <Content Include="MDL\material.min.js" />
     <Content Include="IndexStyleSheet.css" />
+    <Content Include="notLoggedIn_StyleSheet.css" />
     <Content Include="register.html" />
     <Content Include="RegisterStyleSheet.css" />
     <Content Include="Web.config" />
