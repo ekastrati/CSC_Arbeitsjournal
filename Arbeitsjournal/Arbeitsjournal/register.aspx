@@ -4,14 +4,58 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Registrieren</title>
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+        $(function () {
+            $("#header_notLoggedIn").load("header_notLoggedIn.html");
+        });
+    </script>
 </head>
 <body>
-    <form id="form1" runat="server" action="index.aspx" enctype="text/plain" method="post">
-    <div>
-    
+    <div id="header_notLoggedIn"></div>
+    <div id="containerNebenMenu">
+        <form id="frmRegister">
+            <div class="inputContainer">
+                <div class="containerDesInputContainers">
+                    <label for="username">Username:</label>
+                    <input id="username" type="text" maxlength="20" placeholder="Username" />
+                </div>
+                <div class="containerDesInputContainers">
+                    <label for="prename">Vorname:</label>
+                    <input id="prename" type="text" maxlength="20" placeholder="Vorname" />
+                </div>
+            </div>
+            <br />
+            <div class="inputContainer"></div>
+            <div class="inputContainer">
+                <div class="containerDesInputContainers">
+                    <label for="email">Email:</label>
+                    <input id="email" type="text" maxlength="20" placeholder="Email" />
+                </div>
+                <div class="containerDesInputContainers">
+                    <label for="name">Nachname:</label>
+                    <input id="name" type="text" maxlength="20" placeholder="Nachname" />
+                </div>
+            </div>
+            <br />
+            <div class="inputContainer"></div>
+            <div class="inputContainer">
+                <div class="containerDesInputContainers">
+                    <label for="password">Passwort:</label>
+                    <input id="password" type="text" maxlength="20" placeholder="Password" />
+                </div>
+                <div class="containerDesInputContainers">
+                    <label for="repeatPassword">Passwort Wiederholen:</label>
+                    <input id="repeatPassword" type="text" maxlength="20" placeholder="Repeat Password" />
+                </div>
+            </div>
+            <br />
+            <div class="registrierenButtonAlignMitte">
+                <center><input id="btnregistrieren" type="submit" value="Registrieren" /></center>
+            </div>
+        </form>
     </div>
-    </form>
 </body>
 </html>

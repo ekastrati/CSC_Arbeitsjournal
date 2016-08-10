@@ -59,6 +59,7 @@
   <ItemGroup>
     <Content Include="header_loggedIn.html" />
     <Content Include="header_notLoggedIn.html" />
+    <Content Include="header_StyleSheet.css" />
     <Content Include="MDL\bower.json" />
     <Content Include="MDL\LICENSE" />
     <Content Include="MDL\material.min.css.map" />
@@ -80,7 +81,8 @@
     <Content Include="MDL\material.min.js" />
     <Content Include="IndexStyleSheet.css" />
     <Content Include="notLoggedIn_StyleSheet.css" />
-    <Content Include="register.html" />
+    <Content Include="blabla.html" />
+    <Content Include="register.aspx" />
     <Content Include="RegisterStyleSheet.css" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -94,6 +96,13 @@
     </Compile>
     <Compile Include="Main.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="register.aspx.cs">
+      <DependentUpon>register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="register.aspx.designer.cs">
+      <DependentUpon>register.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

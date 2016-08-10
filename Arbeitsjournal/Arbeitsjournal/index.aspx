@@ -17,9 +17,25 @@
 <body>
     <!-- Header Einbindung -->
     <div id="header_loggedIn"></div>
-    <div id="dashboard_profile"><div class="boxInnerhalb">blabla</div></div>
-    <div id="dashboard_letzteArbeitsjournale"><div class="boxInnerhalb">blabla</div></div>
-    <div id="dashboard_neuePosts"><div class="boxInnerhalb">blabla</div></div>
+    <div id="containerNebenMenu">
+        <h2 id="title">Dashboard</h2>
+        <div class="leftbar">
+            <div id="dashboard_profile" class="abstandsbox">
+            <h3 class="subtitle">Profil</h3>
+            <div class="boxInnerhalb">Ist noch leer</div>
+        </div>
+        <div id="dashboard_neuePosts" class="abstandsbox">
+            <h3 class="subtitle">Posts von Mitarbeitern</h3>
+            <div class="boxInnerhalb">Keine neuen Post von ihren Mitarbeitern</div>
+        </div>
+            </div>
+        <div class="sidebar">
+        <div id="dashboard_letzteArbeitsjournale" class="abstandsbox">
+            <h3 class="subtitle">Letzte Arbeitsjournale</h3>
+            <div class="boxInnerhalb">Keine letzten Arbeitsjournale</div>
+        </div>
+        </div>
+    </div>
     <form id="form1" runat="server" action="index.aspx" enctype="text/plain" method="post">
     </form>
 </body>
