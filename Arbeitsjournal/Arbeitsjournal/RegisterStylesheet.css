@@ -10,11 +10,24 @@
 
 /* Das ist der InputContainer des InputContainers */
 .containerDesInputContainers{
-    width: 250px;
+    min-height: 20px;
+    width: 200px;
     float: left;
     margin-left: 100px;
 }
 
 .registrierenButtonAlignMitte{
     align-items: center;
+}
+
+.labelGleichbreit{
+    min-height: 20px;
+    min-width: 120px;
+    width: 120px;
+    float: left;
+    margin-left: 100px;
+}
+
+.onlyFloatRight{
+    float: right;
 }

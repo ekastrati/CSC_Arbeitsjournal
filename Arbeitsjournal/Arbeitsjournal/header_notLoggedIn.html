@@ -4,11 +4,16 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="stylesheet" href="RegisterStyleSheet.css" />
     <link rel="stylesheet" href="notLoggedIn_StyleSheet.css" />
+    <link rel="stylesheet" href="ImpressumStyleSheet.css" />
     <title>Registrieren</title>
     <script type="text/javascript">
         var currentLocation = window.location.href;
         currentLocation = currentLocation.replace('http://localhost:50936/', '');
         console.log(currentLocation);
+        if (currentLocation.indexOf('Register') !== -1) {
+            var element = document.getElementById(registrieren);
+            getClick(element);
+        }
         window.onload = function () {
             var currentLocation = window.location.href;
             currentLocation = currentLocation.replace('http://localhost:50936/', '');
@@ -39,7 +44,7 @@
                     </li>
                     <li class="menuItemUmrandung" id="impressum">
                         <div id="impressumMenu" tabindex="2" onclick="getClick(this);">
-                            <a class="menuLinks" href="https://www.google.ch/?gws_rd=ssl"><center>Impressum</center></a>
+                            <a class="menuLinks" href="Impressum.aspx"><center>Impressum</center></a>
                         </div>
                     </li>
                     <li class="menuItemUmrandung" id="registrieren">
@@ -48,7 +53,7 @@
                         </div>
                     </li>
                     <li class="menuItemUmrandung" id="anmelden">
-                        <div id="logInMenu" tabindex="4" onclick="getClick(this);"><a class="menuLinks"><center>Anmelden</center></a> </div>
+                        <div id="logInMenu" tabindex="4" onclick="getClick(this);"><a class="menuLinks" href="Anmelden.aspx"><center>Anmelden</center></a> </div>
                     </li>
                 </ul>
             </menu>

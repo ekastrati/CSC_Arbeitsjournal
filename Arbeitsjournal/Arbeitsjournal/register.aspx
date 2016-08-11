@@ -16,14 +16,18 @@
 <body>
     <div id="header_notLoggedIn"></div>
     <div id="containerNebenMenu">
-        <form id="frmRegister">
+        <form id="frmRegister" action="index.aspx" method="post">
             <div class="inputContainer">
                 <div class="containerDesInputContainers">
-                    <label for="username">Username:</label>
+                    <div class="labelGleichbreit">
+                        <label for="username">Username:</label>
+                    </div>
                     <input id="username" type="text" maxlength="20" placeholder="Username" />
                 </div>
                 <div class="containerDesInputContainers">
-                    <label for="prename">Vorname:</label>
+                    <div class="labelGleichbreit">
+                        <label for="prename">Vorname:</label>
+                    </div>
                     <input id="prename" type="text" maxlength="20" placeholder="Vorname" />
                 </div>
             </div>
@@ -31,11 +35,15 @@
             <div class="inputContainer"></div>
             <div class="inputContainer">
                 <div class="containerDesInputContainers">
-                    <label for="email">Email:</label>
+                    <div class="labelGleichbreit">
+                        <label for="email">Email:</label>
+                    </div>
                     <input id="email" type="text" maxlength="20" placeholder="Email" />
                 </div>
                 <div class="containerDesInputContainers">
-                    <label for="name">Nachname:</label>
+                    <div class="labelGleichbreit">
+                        <label for="name">Nachname:</label>
+                    </div>
                     <input id="name" type="text" maxlength="20" placeholder="Nachname" />
                 </div>
             </div>
@@ -43,17 +51,29 @@
             <div class="inputContainer"></div>
             <div class="inputContainer">
                 <div class="containerDesInputContainers">
-                    <label for="password">Passwort:</label>
+                    <div class="labelGleichbreit">
+                        <label for="password">Passwort:</label>
+                    </div>
+
                     <input id="password" type="text" maxlength="20" placeholder="Password" />
                 </div>
                 <div class="containerDesInputContainers">
-                    <label for="repeatPassword">Passwort Wiederholen:</label>
+                    <div class="labelGleichbreit">
+                        <label for="repeatPassword">Passwort:</label>
+                    </div>
+
                     <input id="repeatPassword" type="text" maxlength="20" placeholder="Repeat Password" />
                 </div>
             </div>
             <br />
             <div class="registrierenButtonAlignMitte">
-                <center><input id="btnregistrieren" type="submit" value="Registrieren" /></center>
+                <div class="containerDesInputContainers">
+                    <div class="labelGleichbreit"></div>
+                    <div class="labelGleichbreit"></div>
+                    <div class="onlyFloatRight">
+<input id="btnregistrieren" type="submit" value="Registrieren" />
+                    </div>
+                </div>
             </div>
         </form>
     </div>

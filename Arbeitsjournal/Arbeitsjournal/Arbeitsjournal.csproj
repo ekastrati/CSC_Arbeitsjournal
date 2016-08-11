@@ -57,10 +57,12 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Anmelden.aspx" />
     <Content Include="header_loggedIn.html" />
     <Content Include="header_notLoggedIn.html" />
     <Content Include="header_StyleSheet.css" />
     <Content Include="Impressum.aspx" />
+    <Content Include="ImpressumStyleSheet.css" />
     <Content Include="MDL\bower.json" />
     <Content Include="MDL\LICENSE" />
     <Content Include="MDL\material.min.css.map" />
@@ -95,6 +97,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Anmelden.aspx.cs">
+      <DependentUpon>Anmelden.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Anmelden.aspx.designer.cs">
+      <DependentUpon>Anmelden.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Impressum.aspx.cs">
       <DependentUpon>Impressum.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -126,23 +135,24 @@
     </Compile>
     <Compile Include="profil.aspx.cs">
       <DependentUpon>profil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
-      <Compile Include="ProfilBearbeiten.aspx.cs">
-        <DependentUpon>ProfilBearbeiten.aspx</DependentUpon>
-        <SubType>ASPXCodeBehind</SubType>
-      </Compile>
-      <Compile Include="ProfilBearbeiten.aspx.designer.cs">
-        <DependentUpon>ProfilBearbeiten.aspx</DependentUpon>
-      </Compile>
-      <Compile Include="Properties\AssemblyInfo.cs" />
-      <Compile Include="Register.aspx.cs">
-        <DependentUpon>Register.aspx</DependentUpon>
-        <SubType>ASPXCodeBehind</SubType>
-      </Compile>
-      <Compile Include="Register.aspx.designer.cs">
-        <DependentUpon>Register.aspx</DependentUpon>
-      </Compile>
-    </ItemGroup>
+    <Compile Include="ProfilBearbeiten.aspx.cs">
+      <DependentUpon>ProfilBearbeiten.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProfilBearbeiten.aspx.designer.cs">
+      <DependentUpon>ProfilBearbeiten.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
