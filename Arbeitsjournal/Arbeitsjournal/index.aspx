@@ -15,18 +15,19 @@
     </script>
 </head>
 <body>
+    <form id="form2" runat="server">
     <!-- Header Einbindung -->
     <div id="header_loggedIn"></div>
     <div id="containerNebenMenu">
         <h2 id="title">Dashboard</h2>
         <div class="leftbar">
             <div id="dashboard_profile" class="abstandsbox">
-            <h3 class="subtitle">Profil</h3>
-            <div class="boxInnerhalb">Ist noch leer</div>
+            <h3 class="subtitle">Profil<asp:Button ID="btnProfilbearbeiten" Text="Profil bearbeiten" runat="server" OnClick="btnProfilbearbeiten_Click" /></h3>
+            <div class="boxInnerhalb"><asp:Label id="lblProfil" runat="server" Text="Ist noch leer"></asp:Label></div>
         </div>
         <div id="dashboard_neuePosts" class="abstandsbox">
             <h3 class="subtitle">Posts von Mitarbeitern</h3>
-            <div class="boxInnerhalb">Keine neuen Post von ihren Mitarbeitern</div>
+            <div class="boxInnerhalb"><asp:Label id="lblPostsMitarbeiter" runat="server" Text="Keine neuen Post von ihren Mitarbeitern"></asp:Label></div>
         </div>
             </div>
         <div class="sidebar">
@@ -36,7 +37,6 @@
         </div>
         </div>
     </div>
-    <form id="form1" runat="server" action="index.aspx" enctype="text/plain" method="post">
     </form>
 </body>
 </html>
