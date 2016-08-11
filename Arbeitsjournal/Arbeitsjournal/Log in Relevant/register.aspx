@@ -38,7 +38,7 @@
                     <div class="labelGleichbreit">
                         <label for="email">Email:</label>
                     </div>
-                    <input id="email" type="text" maxlength="20" placeholder="Email" />
+                    <input id="email" type="text" maxlength="60" placeholder="Email" />
                 </div>
                 <div class="containerDesInputContainers">
                     <div class="labelGleichbreit">
@@ -71,7 +71,7 @@
                     <div class="labelGleichbreit"></div>
                     <div class="labelGleichbreit"></div>
                     <div class="onlyFloatRight">
-<input id="btnregistrieren" type="submit" value="Registrieren" />
+                        <input id="btnregistrieren" type="submit" value="Registrieren" />
                     </div>
                 </div>
             </div>
