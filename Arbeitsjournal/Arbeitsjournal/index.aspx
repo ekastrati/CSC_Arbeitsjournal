@@ -33,7 +33,7 @@
         <div class="sidebar">
         <div id="dashboard_letzteArbeitsjournale" class="abstandsbox">
             <h3 class="subtitle">Letzte Arbeitsjournale</h3>
-            <div class="boxInnerhalb">Keine letzten Arbeitsjournale</div>
+            <div class="boxInnerhalb"><asp:Label id="lblLetzteArbeitsjournale" runat="server" Text="Keine letzten Arbeitsjournale"></asp:Label></div>
         </div>
         </div>
     </div>

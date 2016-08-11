@@ -60,9 +60,9 @@
     <Content Include="Anmelden.aspx" />
     <Content Include="header_loggedIn.html" />
     <Content Include="header_notLoggedIn.html" />
-    <Content Include="header_StyleSheet.css" />
+    <Content Include="CSS\header_StyleSheet.css" />
     <Content Include="Impressum.aspx" />
-    <Content Include="ImpressumStyleSheet.css" />
+    <Content Include="CSS\ImpressumStyleSheet.css" />
     <Content Include="MDL\bower.json" />
     <Content Include="MDL\LICENSE" />
     <Content Include="MDL\material.min.css.map" />
@@ -77,25 +77,24 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Index.aspx" />
-    <Content Include="mainscript.js" />
+    <Content Include="JS\mainscript.js" />
     <Content Include="MDL\material.css" />
     <Content Include="MDL\material.js" />
     <Content Include="MDL\material.min.css" />
     <Content Include="MDL\material.min.js" />
-    <Content Include="IndexStyleSheet.css" />
+    <Content Include="CSS\IndexStyleSheet.css" />
     <Content Include="meineBeitraege.aspx" />
-    <Content Include="meineBeitraege.css" />
-    <Content Include="MeineBeiträge.aspx" />
+    <Content Include="CSS\meineBeitraege.css" />
     <Content Include="mitarbeiter.aspx" />
-    <Content Include="mitarbeiter.css" />
-    <Content Include="notLoggedIn_StyleSheet.css" />
+    <Content Include="CSS\mitarbeiter.css" />
+    <Content Include="CSS\notLoggedIn_StyleSheet.css" />
     <Content Include="blabla.html" />
     <Content Include="Passwort.aspx" />
     <Content Include="PasswortBearbeiten.aspx" />
     <Content Include="ProfilBearbeiten.aspx" />
-    <Content Include="ProfilBearbeiten_StyleSheet.css" />
+    <Content Include="CSS\ProfilBearbeiten_StyleSheet.css" />
     <Content Include="Register.aspx" />
-    <Content Include="RegisterStyleSheet.css" />
+    <Content Include="CSS\RegisterStyleSheet.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -121,13 +120,6 @@
       <DependentUpon>Index.aspx</DependentUpon>
     </Compile>
     <Compile Include="Main.cs" />
-    <Compile Include="MeineBeiträge.aspx.cs">
-      <DependentUpon>MeineBeiträge.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="MeineBeiträge.aspx.designer.cs">
-      <DependentUpon>MeineBeiträge.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Passwort.aspx.cs">
       <DependentUpon>Passwort.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

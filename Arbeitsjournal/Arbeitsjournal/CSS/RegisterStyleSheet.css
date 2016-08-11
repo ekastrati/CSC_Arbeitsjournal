@@ -11,7 +11,7 @@
 /* Das ist der InputContainer des InputContainers */
 .containerDesInputContainers{
     min-height: 20px;
-    width: 200px;
+    width: 250px;
     float: left;
     margin-left: 100px;
 }
