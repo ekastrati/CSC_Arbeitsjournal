@@ -8,12 +8,12 @@
     <script type="text/javascript">
         var currentLocation = window.location.href;
         currentLocation = currentLocation.replace('http://localhost:50936/', '');
-
+        console.log(currentLocation);
         window.onload = function () {
             var currentLocation = window.location.href;
             currentLocation = currentLocation.replace('http://localhost:50936/', '');
             console.log(currentLocation);
-            if (currentLocation == 'register.html') {
+            if (currentLocation.indexOf('Register') !== -1) {
                 var element = document.getElementById(registrieren);
                 getClick(element);
             }
@@ -34,7 +34,7 @@
                     </li>
                     <li class="menuItemUmrandung" id="home" tabindex="1">
                         <div id="homeMenu" onclick="getClick(this);">
-                            <a class="menuLinks" href="https://www.google.ch/?gws_rd=ssl"><center>Home</center></a>
+                            <a class="menuLinks" href="index.aspx"><center>Home</center></a>
                         </div>
                     </li>
                     <li class="menuItemUmrandung" id="impressum">
@@ -44,7 +44,7 @@
                     </li>
                     <li class="menuItemUmrandung" id="registrieren">
                         <div id="registerMenu" tabindex="2" onclick="getClick(this);">
-                            <a class="menuLinks" href="register.html"><center>Registrieren</center></a>
+                            <a class="menuLinks" href="Register.aspx"><center>Registrieren</center></a>
                         </div>
                     </li>
                     <li class="menuItemUmrandung" id="anmelden">

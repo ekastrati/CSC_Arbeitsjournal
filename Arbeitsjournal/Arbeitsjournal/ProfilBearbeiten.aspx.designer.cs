@@ -10,6 +10,6 @@
 namespace Arbeitsjournal {
     
     
-    public partial class register {
+    public partial class ProfilBearbeiten {
     }
 }

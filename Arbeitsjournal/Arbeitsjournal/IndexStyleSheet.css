@@ -3,17 +3,36 @@
 }
 
 div {
-    display: block;
+    display: block;                 
+}
+
+div.sidebar{
+    float: right;
+    width: 60%;
+}
+
+div.leftbar{
+    float: left;
+    width: 40%;
+}
+
+.abstandsbox{
+    margin-bottom: 10px;
 }
 
 #containerNebenMenu{
     margin-left: 300px;
+    min-width: 1024px;
     width: auto;
     white-space: nowrap !important;
 }
 
 #title{
     padding-left: 20px;
+}
+
+.subtitle{
+    padding-left: 30px;
 }
 
 #titleOfEachSite{
@@ -43,25 +62,39 @@ div {
 
 /* dashboard Boxen */
 #dashboard_profile{
-    margin-left: 300px;
     border-style: solid;
     border-radius: 5px;
     border-width: 2px;
     width: 400px;
-    height: 250px;
+    height: auto;
 }
 
 #dashboard_letzteArbeitsjournale{
-
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 2px;
+    min-width: 100%;
+    width: 100%;
+    height: auto;
+    float: left;
 }
 
 #dashboard_neuePosts{
-
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 2px;
+    width: 400px;
+    height: auto;
 }
 
 /* Das ist die Box in den kleinen Kästchen */
 .boxInnerhalb{
-    padding: 10px;
+    margin: 10px 10px 10px 25px;
+    padding: 2px;
+    min-height: 100px;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 2px;
 }
 
 #divMenu {
