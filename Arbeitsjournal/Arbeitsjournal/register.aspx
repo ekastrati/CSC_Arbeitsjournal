@@ -9,21 +9,25 @@
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
     <script>
         $(function () {
-            $("#header_notLoggedIn").load("header_notLoggedIn.html");
+            $("#header_notLoggedIn").load("Header/header_notLoggedIn.html");
         });
     </script>
 </head>
 <body>
     <div id="header_notLoggedIn"></div>
     <div id="containerNebenMenu">
-        <form id="frmRegister">
+        <form id="frmRegister" runat="server" action="index.aspx" method="post">
             <div class="inputContainer">
                 <div class="containerDesInputContainers">
-                    <label for="username">Username:</label>
+                    <div class="labelGleichbreit">
+                        <label for="username">Username:</label>
+                    </div>
                     <input id="username" type="text" maxlength="20" placeholder="Username" />
                 </div>
                 <div class="containerDesInputContainers">
-                    <label for="prename">Vorname:</label>
+                    <div class="labelGleichbreit">
+                        <label for="prename">Vorname:</label>
+                    </div>
                     <input id="prename" type="text" maxlength="20" placeholder="Vorname" />
                 </div>
             </div>
@@ -31,11 +35,15 @@
             <div class="inputContainer"></div>
             <div class="inputContainer">
                 <div class="containerDesInputContainers">
-                    <label for="email">Email:</label>
-                    <input id="email" type="text" maxlength="20" placeholder="Email" />
+                    <div class="labelGleichbreit">
+                        <label for="email">Email:</label>
+                    </div>
+                    <input id="email" type="email" maxlength="60" placeholder="Email" />
                 </div>
                 <div class="containerDesInputContainers">
-                    <label for="name">Nachname:</label>
+                    <div class="labelGleichbreit">
+                        <label for="name">Nachname:</label>
+                    </div>
                     <input id="name" type="text" maxlength="20" placeholder="Nachname" />
                 </div>
             </div>
@@ -43,19 +51,37 @@
             <div class="inputContainer"></div>
             <div class="inputContainer">
                 <div class="containerDesInputContainers">
-                    <label for="password">Passwort:</label>
+                    <div class="labelGleichbreit">
+                        <label for="password">Passwort:</label>
+                    </div>
+
                     <input id="password" type="text" maxlength="20" placeholder="Password" />
                 </div>
                 <div class="containerDesInputContainers">
-                    <label for="repeatPassword">Passwort Wiederholen:</label>
+                    <div class="labelGleichbreit">
+                        <label for="repeatPassword">Passwort:</label>
+                    </div>
+
                     <input id="repeatPassword" type="text" maxlength="20" placeholder="Repeat Password" />
                 </div>
             </div>
             <br />
             <div class="registrierenButtonAlignMitte">
-                <center><input id="btnregistrieren" type="submit" value="Registrieren" /></center>
+                <div class="containerDesInputContainers">
+                    <div class="labelGleichbreit"></div>
+                    <div class="labelGleichbreit"></div>
+                    <div class="onlyFloatRight">
+                        <asp:Button id="btnregistrieren" type="submit" value="Registrieren" runat="server" Text="Jetzt Registrieren!" />
+                    </div>
+                </div>
             </div>
         </form>
+        <% 
+//            var fname;
+//fname=Request.Form("frmRegister");
+//      Response.Write("Hello " & fname & "!<br>");
+//      Response.Write("How are you today?");
+%>
     </div>
 </body>
 </html>
