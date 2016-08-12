@@ -20,12 +20,17 @@ namespace Arbeitsjournal
 
         protected void btnAnmelden_Click(object sender, EventArgs e)
         {
-            if (!(txtUsername.Text.Length > 20 && txtPassword.Text.Length > 20))
+            if (!(txtUsername.Text.Length > 20 && txtPassword.Text.Length > 20 && txtPassword.Text.Length < 6))
             {
                 user = new Dictionary<string, string>();
                 user["username"] = txtUsername.Text;
                 Session["LoggedIn"] = user;
                 Response.Redirect("Index.aspx");
+            }
+            else
+            {
+                string fehlermeldung = "Bitte Überprüfen Sie noch einmal Ihre eingaben";
+                fehlermeldung += "\n Nicht mehr als 20 Zeichen pro Textfeld und nicht weniger als sechs Zeichen beim Passwort";
             }
         }
     }
