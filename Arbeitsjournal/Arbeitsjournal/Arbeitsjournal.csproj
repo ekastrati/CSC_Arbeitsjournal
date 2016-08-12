@@ -58,8 +58,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Anmelden.aspx" />
-    <Content Include="header_loggedIn.html" />
-    <Content Include="header_notLoggedIn.html" />
+    <Content Include="Header\header_loggedIn.html" />
+    <Content Include="Header\header_notLoggedIn.html" />
     <Content Include="CSS\header_StyleSheet.css" />
     <Content Include="Impressum.aspx" />
     <Content Include="CSS\ImpressumStyleSheet.css" />
@@ -167,6 +167,7 @@
       <Name>DataLayer</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

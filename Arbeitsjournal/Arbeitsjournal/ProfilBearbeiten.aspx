@@ -9,7 +9,7 @@
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
     <script>
         $(function () {
-            $("#header_loggedIn").load("header_loggedIn.html");
+            $("#header_loggedIn").load("Header/header_loggedIn.html");
         });
     </script>
 </head>
