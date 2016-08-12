@@ -45,6 +45,9 @@
     border-color: black;
     border-radius: 7px;
     position: absolute;
+    overflow-y: auto;
+    overflow-x: hidden;
+    direction: rtl;
 }
 
 #mitarbeiterBeitrag {
@@ -57,6 +60,9 @@
     border-color: black;
     border-radius: 7px;
     position: absolute;
+    overflow-y: auto;
+    overflow-x: hidden;
+    direction: rtl;
 }
 
 #abonniertDiv button {
@@ -73,7 +79,7 @@
 }
 
 
-#abonniertDiv button:hover {
+    #abonniertDiv button:hover {
         background: #ff2626;
         text-decoration: none;
     }
@@ -90,11 +96,11 @@
     padding: 5px 3px 5px 3px;
     border: solid #ef2525 2px;
     text-decoration: none;
-    position:absolute;
+    position: absolute;
 }
 
 
-#mitarbeiterDiv button:hover {
+    #mitarbeiterDiv button:hover {
         background: #ff2626;
         text-decoration: none;
     }

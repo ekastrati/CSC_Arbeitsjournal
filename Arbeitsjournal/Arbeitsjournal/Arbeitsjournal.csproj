@@ -89,6 +89,7 @@
     <Content Include="blabla.html" />
     <Content Include="Passwort.aspx" />
     <Content Include="profil.aspx" />
+    <Content Include="profil.css" />
     <Content Include="ProfilBearbeiten.aspx" />
     <Content Include="ProfilBearbeiten_StyleSheet.css" />
     <Content Include="Register.aspx" />
@@ -111,6 +112,16 @@
       <DependentUpon>Index.aspx</DependentUpon>
     </Compile>
     <Compile Include="Main.cs" />
+    <Compile Include="mitarbeiter.aspx.cs">
+      <DependentUpon>mitarbeiter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mitarbeiter.aspx.cs.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mitarbeiter.aspx.cs.designer.cs">
+      <DependentUpon>mitarbeiter.aspx.cs.cs</DependentUpon>
+    </Compile>
     <Compile Include="Passwort.aspx.cs">
       <DependentUpon>Passwort.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -118,20 +129,16 @@
     <Compile Include="Passwort.aspx.designer.cs">
       <DependentUpon>Passwort.aspx</DependentUpon>
     </Compile>
-    <Compile Include="mitarbeiter.aspx.cs">
-      <DependentUpon>mitarbeiter.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
     <Compile Include="mitarbeiter.aspx.designer.cs">
       <DependentUpon>mitarbeiter.aspx</DependentUpon>
     </Compile>
-	<Compile Include="meineBeitraege.aspx.cs">
+    <Compile Include="meineBeitraege.aspx.cs">
       <DependentUpon>meineBeitraege.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-	<Compile Include="meineBeitraege.aspx.designer.cs">
-	  <DependentUpon>meineBeitraege.aspx</DependentUpon>
-	</Compile>
+    <Compile Include="meineBeitraege.aspx.designer.cs">
+      <DependentUpon>meineBeitraege.aspx</DependentUpon>
+    </Compile>
     <Compile Include="profil.aspx.cs">
       <DependentUpon>profil.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
