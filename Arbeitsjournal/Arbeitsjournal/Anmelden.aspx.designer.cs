@@ -10,6 +10,6 @@
 namespace Arbeitsjournal {
     
     
-    public partial class Impressum {
+    public partial class Anmelden {
     }
 }

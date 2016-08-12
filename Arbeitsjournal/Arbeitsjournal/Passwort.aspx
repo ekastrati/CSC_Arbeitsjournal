@@ -9,7 +9,7 @@
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
     <script>
         $(function () {
-            $("#header_loggedIn").load("header_loggedIn.html");
+            $("#header_loggedIn").load("Header/header_loggedIn.html");
         });
     </script>
 </head>
@@ -21,7 +21,7 @@
         <div class="boxInnerhalb">
             <label for="passwordNew">Passwort:</label>
             <input id="passwordNew" type="password" placeholder="Passwort" />
-            <button id="submitPasswordChange">Übernehmen</button>
+            <asp:Button id="submitPasswordChange" runat="server" Text="Übernehmen"></asp:Button>
         </div>
     </div>
 </body>

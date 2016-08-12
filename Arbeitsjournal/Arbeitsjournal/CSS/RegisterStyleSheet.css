@@ -1,7 +1,6 @@
 ﻿body {
 }
 
-
 /* Das sind inputContainer für die Eingabefelder in der Registrierungsseite */
 .inputContainer{
     width: 1000px !important;
@@ -10,6 +9,7 @@
 
 /* Das ist der InputContainer des InputContainers */
 .containerDesInputContainers{
+    min-height: 20px;
     width: 250px;
     float: left;
     margin-left: 100px;
@@ -17,4 +17,16 @@
 
 .registrierenButtonAlignMitte{
     align-items: center;
+}
+
+.labelGleichbreit{
+    min-height: 20px;
+    min-width: 120px;
+    width: 120px;
+    float: left;
+    margin-left: 100px;
+}
+
+.onlyFloatRight{
+    float: right;
 }

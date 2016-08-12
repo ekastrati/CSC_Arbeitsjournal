@@ -57,10 +57,12 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="header_loggedIn.html" />
-    <Content Include="header_notLoggedIn.html" />
-    <Content Include="header_StyleSheet.css" />
+    <Content Include="Anmelden.aspx" />
+    <Content Include="Header\header_loggedIn.html" />
+    <Content Include="Header\header_notLoggedIn.html" />
+    <Content Include="CSS\header_StyleSheet.css" />
     <Content Include="Impressum.aspx" />
+    <Content Include="CSS\ImpressumStyleSheet.css" />
     <Content Include="MDL\bower.json" />
     <Content Include="MDL\LICENSE" />
     <Content Include="MDL\material.min.css.map" />
@@ -75,28 +77,35 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Index.aspx" />
-    <Content Include="mainscript.js" />
+    <Content Include="JS\mainscript.js" />
     <Content Include="MDL\material.css" />
     <Content Include="MDL\material.js" />
     <Content Include="MDL\material.min.css" />
     <Content Include="MDL\material.min.js" />
-    <Content Include="IndexStyleSheet.css" />
+    <Content Include="CSS\IndexStyleSheet.css" />
     <Content Include="meineBeitraege.aspx" />
-    <Content Include="meineBeitraege.css" />
+    <Content Include="CSS\meineBeitraege.css" />
     <Content Include="mitarbeiter.aspx" />
-    <Content Include="mitarbeiter.css" />
-    <Content Include="notLoggedIn_StyleSheet.css" />
+    <Content Include="CSS\mitarbeiter.css" />
+    <Content Include="CSS\notLoggedIn_StyleSheet.css" />
     <Content Include="blabla.html" />
     <Content Include="Passwort.aspx" />
     <Content Include="profil.aspx" />
     <Content Include="profil.css" />
     <Content Include="ProfilBearbeiten.aspx" />
-    <Content Include="ProfilBearbeiten_StyleSheet.css" />
+    <Content Include="CSS\ProfilBearbeiten_StyleSheet.css" />
     <Content Include="Register.aspx" />
-    <Content Include="RegisterStyleSheet.css" />
+    <Content Include="CSS\RegisterStyleSheet.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Anmelden.aspx.cs">
+      <DependentUpon>Anmelden.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Anmelden.aspx.designer.cs">
+      <DependentUpon>Anmelden.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Impressum.aspx.cs">
       <DependentUpon>Impressum.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -143,9 +152,6 @@
       <DependentUpon>profil.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="profil.aspx.designer.cs">
-      <DependentUpon>profil.aspx</DependentUpon>
-    </Compile>
     <Compile Include="ProfilBearbeiten.aspx.cs">
       <DependentUpon>ProfilBearbeiten.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -162,6 +168,13 @@
       <DependentUpon>Register.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataLayer\DataLayer.csproj">
+      <Project>{5d1bfd23-8c8f-4990-814e-76804defe200}</Project>
+      <Name>DataLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
