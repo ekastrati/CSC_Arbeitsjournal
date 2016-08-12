@@ -71,7 +71,7 @@
                     <div class="labelGleichbreit"></div>
                     <div class="labelGleichbreit"></div>
                     <div class="onlyFloatRight">
-                        <asp:Button id="btnregistrieren" type="submit" value="Registrieren" runat="server" Text="Jetzt Registrieren!" />
+                        <asp:Button id="btnregistrieren" type="submit" value="Registrieren" runat="server" Text="Jetzt Registrieren!" OnClick="btnregistrieren_Click" />
                     </div>
                 </div>
             </div>
