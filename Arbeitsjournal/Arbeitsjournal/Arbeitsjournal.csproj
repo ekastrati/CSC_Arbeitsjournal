@@ -90,7 +90,6 @@
     <Content Include="CSS\notLoggedIn_StyleSheet.css" />
     <Content Include="blabla.html" />
     <Content Include="Passwort.aspx" />
-    <Content Include="PasswortBearbeiten.aspx" />
     <Content Include="ProfilBearbeiten.aspx" />
     <Content Include="CSS\ProfilBearbeiten_StyleSheet.css" />
     <Content Include="Register.aspx" />
@@ -133,13 +132,6 @@
     </Compile>
     <Compile Include="mitarbeiter.aspx.designer.cs">
       <DependentUpon>mitarbeiter.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="PasswortBearbeiten.aspx.cs">
-      <DependentUpon>PasswortBearbeiten.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="PasswortBearbeiten.aspx.designer.cs">
-      <DependentUpon>PasswortBearbeiten.aspx</DependentUpon>
     </Compile>
     <Compile Include="profil.aspx.cs">
       <DependentUpon>profil.aspx</DependentUpon>

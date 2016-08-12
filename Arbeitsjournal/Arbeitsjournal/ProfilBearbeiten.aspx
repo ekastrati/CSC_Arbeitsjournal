@@ -18,7 +18,7 @@
     <div id="header_loggedIn"></div>
     <div id="containerNebenMenu">
         <h2 id="title">Profil bearbeiten</h2>
-        <form id="changeProfileData" method="post" action="ProfilBearbeiten.aspx">
+            <form id="changeProfileData" runat="server" action="index.aspx" method="post">
             <div class="boxInnerhalb">
                 <div class="boxInnerhalb">
                     <div class="containerDesInputContainers">
@@ -61,8 +61,8 @@
                 <br />
             </div>
             <div class="sidebar">
-                <button id="applyChanges" type="submit" value="applyChanges">Übernehmen</button>
-                <button id="passwordChange" value="passwordChange">Passwort ändern</button>
+                <asp:button id="applyChanges" runat="server" type="submit" value="applyChanges" Text="Übernehmen"></asp:button>
+                <asp:button id="passwordChange" runat="server" Text="Passwort ändern" value="passwordChange"></asp:button>
             </div>
         </form>
     </div>

@@ -21,7 +21,7 @@
         <div class="boxInnerhalb">
             <label for="passwordNew">Passwort:</label>
             <input id="passwordNew" type="password" placeholder="Passwort" />
-            <button id="submitPasswordChange">Übernehmen</button>
+            <asp:Button id="submitPasswordChange" runat="server" Text="Übernehmen"></asp:Button>
         </div>
     </div>
 </body>
