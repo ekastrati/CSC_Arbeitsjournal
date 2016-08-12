@@ -16,13 +16,13 @@
 <body>
     <div id="header_notLoggedIn"></div>
     <div id="containerNebenMenu">
-        <form id="frmRegister" action="noAction" method="post">
+        <form id="frmLogIn" runat="server" method="post">
             <div class="inputContainer">
                 <div class="labelGleichbreit">
                     <label for="username">Username:</label>
                 </div>
                 <div class="containerDesInputContainers">
-                    <input id="username" type="text" maxlength="20" placeholder="Username" />
+                    <asp:TextBox id="txtUsername" runat="server" type="text" maxlength="20" placeholder="Username" />
                 </div>
             </div>
             <div class="inputContainer"></div>
@@ -31,14 +31,14 @@
                     <label for="password">Passwort:</label>
                 </div>
                 <div class="containerDesInputContainers">
-                    <input id="password" type="text" maxlength="20" placeholder="Password" />
+                    <asp:TextBox id="txtPassword" runat="server" type="password" maxlength="20" placeholder="Password" />
                 </div>
             </div>
             <br />
             <div class="inputContainer">
                 <div class="containerDesInputContainers"></div>
                 <div class="containerDesInputContainers">
-                    <input id="btnAnmelden" class="onlyFloatRight" type="submit" value="Registrieren" />
+                    <asp:Button id="btnAnmelden" runat="server" class="onlyFloatRight" Text="Anmelden" type="submit" value="Registrieren" OnClick="btnAnmelden_Click" />
                 </div>
             </div>
         </form>

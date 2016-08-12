@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Net.Mail;
 
 namespace Arbeitsjournal
 {
@@ -13,5 +14,10 @@ namespace Arbeitsjournal
 		{
 
 		}
+
+        protected void btnregistrieren_Click(object sender, EventArgs e)
+        {
+            SmtpClient smtpClient = new SmtpClient("doNotReply@endrit.com", 25);
+        }
 	}
 }

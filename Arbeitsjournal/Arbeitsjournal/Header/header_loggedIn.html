@@ -10,8 +10,10 @@
     <title>Arbeitsjournal</title>
 </head>
 <body>
-    <div id="header" class="linearGradientFromLeft"><strong id="title">Arbeitsjournal CSC</strong><button id="abmelden" class="abstandsbox">logout</button><strong id="loginInformation">Willkommen, Endrit</strong></div>
-    <div id="divMenu" class="menuLinks">
+    <form id="frmHeader" runat="server">
+        <div id="header" class="linearGradientFromLeft"><strong id="title">Arbeitsjournal CSC</strong><button id="abmelden" class="abstandsbox">logout</button><asp:label id="lblLoginInformation">Willkommen, </asp:label></div>
+    </form>
+        <div id="divMenu" class="menuLinks">
         <nav>
             <menu>
                 <ul>

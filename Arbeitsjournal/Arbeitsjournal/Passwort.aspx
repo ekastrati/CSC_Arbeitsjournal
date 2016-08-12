@@ -19,9 +19,11 @@
     <div id="containerNebenMenu">
         <h2 id="title">Passwort ändern</h2>
         <div class="boxInnerhalb">
-            <label for="passwordNew">Passwort:</label>
-            <input id="passwordNew" type="password" placeholder="Passwort" />
-            <asp:Button id="submitPasswordChange" runat="server" Text="Übernehmen"></asp:Button>
+            <form id="changePassword" runat="server">
+                <label for="passwordNew">Passwort:</label>
+                <input id="passwordNew" type="password" placeholder="Passwort" />
+                <asp:Button ID="submitPasswordChange" runat="server" Text="Übernehmen"></asp:Button>
+            </form>
         </div>
     </div>
 </body>
