@@ -17,12 +17,13 @@
     <div id="header_notLoggedIn"></div>
     <div id="containerNebenMenu">
         <form id="frmLogIn" runat="server" method="post">
+            <asp:Label ID="lblErrorMessage" runat="server"></asp:Label>
             <div class="inputContainer">
                 <div class="labelGleichbreit">
                     <label for="username">Username:</label>
                 </div>
                 <div class="containerDesInputContainers">
-                    <asp:TextBox id="txtUsername" runat="server" type="text" maxlength="20" placeholder="Username" />
+                    <asp:TextBox ID="txtUsername" runat="server" type="text" MaxLength="20" placeholder="Username" />
                 </div>
             </div>
             <div class="inputContainer"></div>
@@ -31,14 +32,14 @@
                     <label for="password">Passwort:</label>
                 </div>
                 <div class="containerDesInputContainers">
-                    <asp:TextBox id="txtPassword" runat="server" type="password" maxlength="20" placeholder="Password" />
+                    <asp:TextBox ID="txtPassword" runat="server" type="password" MaxLength="20" placeholder="Password" />
                 </div>
             </div>
             <br />
             <div class="inputContainer">
                 <div class="containerDesInputContainers"></div>
                 <div class="containerDesInputContainers">
-                    <asp:Button id="btnAnmelden" runat="server" class="onlyFloatRight" Text="Anmelden" type="submit" value="Registrieren" OnClick="btnAnmelden_Click" />
+                    <asp:Button ID="btnAnmelden" runat="server" class="onlyFloatRight" Text="Anmelden" type="submit" value="Registrieren" OnClick="btnAnmelden_Click" />
                 </div>
             </div>
         </form>

@@ -14,6 +14,7 @@ namespace Arbeitsjournal
         private DataConnector connector;
         private IDictionary<string, string> user;
         private string query;
+
         protected void Page_Load(object sender, EventArgs e)
         {
 
