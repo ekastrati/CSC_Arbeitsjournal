@@ -111,6 +111,7 @@
 }
 
 #abonniert {
+    margin-top:65px;
     margin-left: 300px;
     font-size: 22px;
 }
@@ -167,3 +168,21 @@
     border-left-width: 2px;
     border-left-color: black;
 }
+
+.bearbeitenBtn[type=submit]{
+    margin-top: 215px;
+    margin-left: 851px;
+    border-radius: 9px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 18px;
+    background: #ef2525;
+    padding: 5px 5px 5px 5px;
+    border: solid #ef2525 2px;
+    text-decoration: none;
+}
+    .bearbeitenBtn[type=submit]:hover {
+        background: #ff2626;
+        text-decoration: none;
+    }
+

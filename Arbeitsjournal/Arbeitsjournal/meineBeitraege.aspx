@@ -19,35 +19,35 @@
     <h1 id="titleOfEachSite">Arbeitsjournal: Simon Roth</h1>
     <div class="mainDiv">
         <form id="frmJournal" runat="server">
-            <button>Neuer Beitrag</button>
+            <asp:Button ID="neuerBeitragBtn" runat="server" Text="Neuer Beitrag" />
             <div class="beitragDiv">
                 <h1>Beitrag vom 08.08.2016</h1>
-                <asp:TextBox ID="txtJournal" runat="server">
+                <asp:Label ID="txtJournal" class="txtJournal" runat="server">
                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
                      erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus
                      est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
                      et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
                      takimata sanctus est Lorem ipsum dolor sit amet.
-                </asp:TextBox>
+                </asp:Label>
                 <div class="kommentarDiv">
                     <h1>Kommentar von Freddy</h1>
                     <h2>Montag 08.08.2016</h2>
-                    <p>
+                    <asp:Label ID="txtKommentar" class="txtKommentar" runat="server">
                         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
                      erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus
                      est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
                      et dolore magna aliquyam erat, sed diam voluptua.
-                    </p>
+                    </asp:Label>
                 </div>
                 <div class="kommentarDiv">
                     <h1>Kommentar von Endrit</h1>
                     <h2>Montag 08.08.2016</h2>
-                    <p>
+                    <asp:Label ID="txtKommentar1" class="txtKommentar" runat="server">
                         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
                      erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus
                      est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
                      et dolore magna aliquyam erat, sed diam voluptua.
-                    </p>
+                    </asp:Label>
                 </div>
             </div>
         </form>

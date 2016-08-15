@@ -5,12 +5,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <link rel="stylesheet" href="profil.css" />
+    <link rel="stylesheet" href="CSS/profil.css" />
     <title>Profil</title>
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
     <script>
         $(function () {
-            $("#header_loggedIn").load("header_loggedIn.html");
+            $("#header_loggedIn").load("Header/header_loggedIn.html");
         });
     </script>
 </head>
@@ -18,7 +18,9 @@
     <div id="header_loggedIn"></div>
     <h1 id="titleOfEachSite">Profil</h1>
     <div id="profilDiv">
+        <form id="frmJournal" runat="server">
         <div id="benutzernameDiv">
+            
             <h1 class="profilDivH1">Benutzername</h1>
         </div>
 
@@ -35,6 +37,8 @@
         <div id="vorname"></div>
         <div id="nachname"></div>
         <div id="email"></div>
+            <asp:Button ID="bearbeitenBtn" class="bearbeitenBtn" runat="server" Text="Profil bearbeiten"/>
+        </form>
     </div>
     <h1 id="abonniert">Abonniert</h1>
     <div id="abonniertDiv">
