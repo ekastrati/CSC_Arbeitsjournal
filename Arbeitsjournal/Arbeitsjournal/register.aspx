@@ -16,19 +16,20 @@
 <body>
     <div id="header_notLoggedIn"></div>
     <div id="containerNebenMenu">
-        <form id="frmRegister" runat="server" action="index.aspx" method="post">
+        <form id="frmRegister" runat="server" method="post">
+              <asp:RegularExpressionValidator ID="regexEmailValid" runat="server" ValidationExpression="\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" ControlToValidate="txtEmail" ErrorMessage="Invalid Email Format"></asp:RegularExpressionValidator>
             <div class="inputContainer">
                 <div class="containerDesInputContainers">
                     <div class="labelGleichbreit">
                         <label for="username">Username:</label>
                     </div>
-                    <input id="username" type="text" maxlength="20" placeholder="Username" />
+                    <asp:TextBox id="txtUsername" type="text" maxlength="20" runat="server" placeholder="Username" />
                 </div>
                 <div class="containerDesInputContainers">
                     <div class="labelGleichbreit">
                         <label for="prename">Vorname:</label>
                     </div>
-                    <input id="prename" type="text" maxlength="20" placeholder="Vorname" />
+                    <asp:TextBox  id="txtPrename" type="text" maxlength="20" runat="server" placeholder="Vorname" />
                 </div>
             </div>
             <br />
@@ -38,13 +39,13 @@
                     <div class="labelGleichbreit">
                         <label for="email">Email:</label>
                     </div>
-                    <input id="email" type="email" maxlength="60" placeholder="Email" />
+                    <asp:TextBox id="txtEmail" type="email" maxlength="60" runat="server" placeholder="Email" />
                 </div>
                 <div class="containerDesInputContainers">
                     <div class="labelGleichbreit">
                         <label for="name">Nachname:</label>
                     </div>
-                    <input id="name" type="text" maxlength="20" placeholder="Nachname" />
+                    <asp:TextBox id="txtName" type="text" maxlength="20" runat="server" placeholder="Nachname" />
                 </div>
             </div>
             <br />
@@ -55,14 +56,14 @@
                         <label for="password">Passwort:</label>
                     </div>
 
-                    <input id="password" type="text" maxlength="20" placeholder="Password" />
+                    <asp:TextBox id="txtPassword" type="password" maxlength="20" runat="server" placeholder="Password" />
                 </div>
                 <div class="containerDesInputContainers">
                     <div class="labelGleichbreit">
                         <label for="repeatPassword">Passwort:</label>
                     </div>
 
-                    <input id="repeatPassword" type="text" maxlength="20" placeholder="Repeat Password" />
+                    <asp:TextBox id="txtRepeatPassword" type="password" maxlength="20" runat="server" placeholder="Repeat Password" />
                 </div>
             </div>
             <br />

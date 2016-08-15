@@ -4,22 +4,24 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data;
-using System.Data.OleDb;
+using MySql.Data.MySqlClient;
 using System.IO;
 
 namespace DataLayer
 {
     public class DataConnector
     {
-        protected OleDbDataAdapter DataAdapter = new OleDbDataAdapter();
+    //    protected OleDbDataAdapter DataAdapter = new OleDbDataAdapter();
         public string errorMessage = "";
-        public DataConnector(string ConnectionString)
+        protected MySqlDataAdapter dataAdapter = new MySql.Data.MySqlClient.MySqlDataAdapter();
+        private const string connectionString = "Persist Security Info=False;server=localhost;database=ArbeitsjournalDB;uid=root;password=123456";
+        public DataConnector()
         {
-            OleDbConnection Connection = new OleDbConnection(ConnectionString);
-            this.DataAdapter.SelectCommand = new OleDbCommand("", Connection);
-            this.DataAdapter.InsertCommand = new OleDbCommand("", Connection);
-            this.DataAdapter.UpdateCommand = new OleDbCommand("", Connection);
-            this.DataAdapter.DeleteCommand = new OleDbCommand("", Connection);
+            MySqlConnection connection = new MySqlConnection(connectionString);
+            this.dataAdapter.SelectCommand = new MySqlCommand("", connection);
+            this.dataAdapter.InsertCommand = new MySqlCommand("", connection);
+            this.dataAdapter.UpdateCommand = new MySqlCommand("", connection);
+            this.dataAdapter.DeleteCommand = new MySqlCommand("", connection);
         }
 
         public DataTable DataSelect(string query)
@@ -27,17 +29,21 @@ namespace DataLayer
             DataTable dt = new DataTable();
             try
             {
-                DataAdapter.SelectCommand.CommandText = query;
-                DataAdapter.SelectCommand.Connection.Open();
-                DataAdapter.Fill(dt);
-                DataAdapter.SelectCommand.Connection.Close();
+                dataAdapter.SelectCommand.CommandText = query;
+                dataAdapter.SelectCommand.Connection.Open();
+                dataAdapter.Fill(dt);
+                return dt;
             }
             catch (Exception err)
             {
                 errorMessage = err.Message;
-                DataAdapter.SelectCommand.Connection.Close();
+                return null;
             }
-            return dt;
+            finally
+            {
+                dataAdapter.SelectCommand.Connection.Close();
+            }
+            
         }
 
         public int DataInsert(string query)
@@ -45,16 +51,16 @@ namespace DataLayer
             int result = 0;
             try
             {
-                DataAdapter.InsertCommand.CommandText = query;
-                DataAdapter.InsertCommand.Connection.Open();
-                result = DataAdapter.InsertCommand.ExecuteNonQuery();
-                DataAdapter.InsertCommand.Connection.Close();
+                dataAdapter.InsertCommand.CommandText = query;
+                dataAdapter.InsertCommand.Connection.Open();
+                result = dataAdapter.InsertCommand.ExecuteNonQuery();
+                dataAdapter.InsertCommand.Connection.Close();
                 return result;
             }
             catch (Exception err)
             {
                 errorMessage = err.Message;
-                DataAdapter.InsertCommand.Connection.Close();
+                dataAdapter.InsertCommand.Connection.Close();
                 return 0;
             }
         }
@@ -64,16 +70,16 @@ namespace DataLayer
             int result = 0;
             try
             {
-                DataAdapter.UpdateCommand.CommandText = query;
-                DataAdapter.UpdateCommand.Connection.Open();
-                result = DataAdapter.UpdateCommand.ExecuteNonQuery();
-                DataAdapter.UpdateCommand.Connection.Close();
+                dataAdapter.UpdateCommand.CommandText = query;
+                dataAdapter.UpdateCommand.Connection.Open();
+                result = dataAdapter.UpdateCommand.ExecuteNonQuery();
+                dataAdapter.UpdateCommand.Connection.Close();
                 return result;
             }
             catch (Exception err)
             {
                 errorMessage = err.Message;
-                DataAdapter.UpdateCommand.Connection.Close();
+                dataAdapter.UpdateCommand.Connection.Close();
                 return 0;
             }
         }
@@ -83,16 +89,16 @@ namespace DataLayer
             int result = 0;
             try
             {
-                DataAdapter.DeleteCommand.CommandText = query;
-                DataAdapter.DeleteCommand.Connection.Open();
-                result = DataAdapter.DeleteCommand.ExecuteNonQuery();
-                DataAdapter.DeleteCommand.Connection.Close();
+                dataAdapter.DeleteCommand.CommandText = query;
+                dataAdapter.DeleteCommand.Connection.Open();
+                result = dataAdapter.DeleteCommand.ExecuteNonQuery();
+                dataAdapter.DeleteCommand.Connection.Close();
                 return result;
             }
             catch (Exception err)
             {
                 errorMessage = err.Message;
-                DataAdapter.UpdateCommand.Connection.Close();
+                dataAdapter.UpdateCommand.Connection.Close();
                 return 0;
             }
         }

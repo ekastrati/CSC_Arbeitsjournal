@@ -29,7 +29,7 @@ namespace Arbeitsjournal
             }
             else
             {
-                string fehlermeldung = "Bitte Überprüfen Sie noch einmal Ihre eingaben";
+                string fehlermeldung = "Bitte Überprüfen Sie nochmal Ihre Eingaben";
                 fehlermeldung += "\n Nicht mehr als 20 Zeichen pro Textfeld und nicht weniger als sechs Zeichen beim Passwort";
             }
         }
