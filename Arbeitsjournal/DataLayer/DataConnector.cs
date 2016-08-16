@@ -54,14 +54,16 @@ namespace DataLayer
                 dataAdapter.InsertCommand.CommandText = query;
                 dataAdapter.InsertCommand.Connection.Open();
                 result = dataAdapter.InsertCommand.ExecuteNonQuery();
-                dataAdapter.InsertCommand.Connection.Close();
                 return result;
             }
             catch (Exception err)
             {
                 errorMessage = err.Message;
-                dataAdapter.InsertCommand.Connection.Close();
                 return 0;
+            }
+            finally
+            {
+                dataAdapter.InsertCommand.Connection.Close();
             }
         }
 
@@ -73,14 +75,16 @@ namespace DataLayer
                 dataAdapter.UpdateCommand.CommandText = query;
                 dataAdapter.UpdateCommand.Connection.Open();
                 result = dataAdapter.UpdateCommand.ExecuteNonQuery();
-                dataAdapter.UpdateCommand.Connection.Close();
                 return result;
             }
             catch (Exception err)
             {
                 errorMessage = err.Message;
-                dataAdapter.UpdateCommand.Connection.Close();
                 return 0;
+            }
+            finally
+            {
+                dataAdapter.UpdateCommand.Connection.Close();
             }
         }
 
@@ -92,14 +96,16 @@ namespace DataLayer
                 dataAdapter.DeleteCommand.CommandText = query;
                 dataAdapter.DeleteCommand.Connection.Open();
                 result = dataAdapter.DeleteCommand.ExecuteNonQuery();
-                dataAdapter.DeleteCommand.Connection.Close();
                 return result;
             }
             catch (Exception err)
             {
                 errorMessage = err.Message;
-                dataAdapter.UpdateCommand.Connection.Close();
                 return 0;
+            }
+            finally
+            {
+                dataAdapter.DeleteCommand.Connection.Close();
             }
         }
     }

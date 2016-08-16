@@ -188,6 +188,5 @@ nav menu ul li a div:hover{
 }
 
 #btnProfilbearbeiten[type=submit]{
-    float: right;
-    margin-left: 100px;
+    margin-left: 190px;
 }

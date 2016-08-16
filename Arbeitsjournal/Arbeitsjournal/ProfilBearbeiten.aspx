@@ -24,28 +24,28 @@
                     <div class="containerDesInputContainers">
                         <label for="prename">Vorname:</label>
                     </div>
-                    <input id="prename" type="text" placeholder="Vorname" />
+                    <asp:TextBox id="txtPrename" type="text" runat="server" placeholder="Vorname" />
                 </div>
 
                 <div class="boxInnerhalb">
                     <div class="containerDesInputContainers">
                         <label for="name">Nachname:</label>
                     </div>
-                    <input id="name" type="text" placeholder="Nachname" />
+                    <asp:TextBox id="txtName" type="text" runat="server" placeholder="Nachname" />
                 </div>
 
                 <div class="boxInnerhalb">
                     <div class="containerDesInputContainers">
                         <label for="username">Username:</label>
                     </div>
-                    <input id="username" type="text" placeholder="Benutzername" />
+                    <asp:TextBox id="txtUsername" type="text" runat="server" placeholder="Benutzername" />
                 </div>
 
                 <div class="boxInnerhalb">
                     <div class="containerDesInputContainers">
                         <label for="email">Email:</label>
                     </div>
-                    <input id="email" type="text" placeholder="Email Adresse" />
+                    <asp:TextBox id="txtEmail" type="text" runat="server" placeholder="Email Adresse" />
                 </div>
 
                 <div class="boxInnerhalb">
@@ -55,13 +55,13 @@
                     <div class="containerDesInputContainers">
                         <label for="password">Passwort:</label>
                     </div>
-                    <input id="password" type="password" placeholder="Passwort" />
+                    <asp:TextBox id="txtPassword" type="password" runat="server" placeholder="Passwort" />
                 </div>
                     <strong id="fehlermeldung"></strong>
                 <br />
             </div>
             <div class="sidebar">
-                <asp:button id="applyChanges" runat="server" type="submit" value="applyChanges" Text="Übernehmen"></asp:button>
+                <asp:button id="applyChanges" runat="server" type="submit" value="applyChanges" Text="Übernehmen" OnClick="applyChanges_Click"></asp:button>
                 <asp:button id="passwordChange" runat="server" Text="Passwort ändern" value="passwordChange" OnClick="passwordChange_Click"></asp:button>
             </div>
         </form>
