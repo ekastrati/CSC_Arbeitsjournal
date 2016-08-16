@@ -16,7 +16,7 @@
 </head>
 <body>
     <div id="header_loggedIn"></div>
-    <h1 id="titleOfEachSite">Arbeitsjournal: Simon Roth</h1>
+    <h1 id="titleOfEachSite">Meine Beträge</h1>
     <div class="mainDiv">
         <form id="frmJournal" runat="server">
             <asp:Button ID="neuerBeitragBtn" runat="server" Text="Neuer Beitrag" />

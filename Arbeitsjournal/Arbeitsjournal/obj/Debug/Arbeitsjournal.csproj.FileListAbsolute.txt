@@ -17,6 +17,6 @@ C:\Users\sroth4\Documents\GitHub\CSC_Arbeitsjournal\Arbeitsjournal\Arbeitsjourna
 C:\Users\sroth4\Documents\GitHub\CSC_Arbeitsjournal\Arbeitsjournal\Arbeitsjournal\obj\Debug\Arbeitsjournal.dll
 C:\Users\sroth4\Documents\GitHub\CSC_Arbeitsjournal\Arbeitsjournal\Arbeitsjournal\obj\Debug\Arbeitsjournal.pdb
 C:\Users\ekastrati\Documents\GitHub\CSC_Arbeitsjournal\Arbeitsjournal\Arbeitsjournal\bin\DataLayer.pdb
-C:\Users\sroth4\Documents\GitHub\CSC_Arbeitsjournal\Arbeitsjournal\Arbeitsjournal\bin\DataLayer.dll
 C:\Users\sroth4\Documents\GitHub\CSC_Arbeitsjournal\Arbeitsjournal\Arbeitsjournal\bin\DataLayer.pdb
 C:\Users\ekastrati\Documents\GitHub\CSC_Arbeitsjournal\Arbeitsjournal\Arbeitsjournal\bin\DataLayer.exe
+C:\Users\sroth4\Documents\GitHub\CSC_Arbeitsjournal\Arbeitsjournal\Arbeitsjournal\bin\DataLayer.exe
