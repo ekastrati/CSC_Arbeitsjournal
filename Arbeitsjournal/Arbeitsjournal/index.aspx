@@ -22,7 +22,8 @@
         <h2 id="title">Dashboard</h2>
         <div class="leftbar">
             <div id="dashboard_profile" class="abstandsbox">
-            <h3 class="subtitle">Profil<asp:Button ID="btnProfilbearbeiten" Text="Profil bearbeiten" runat="server" type="submit" OnClick="btnProfilbearbeiten_Click" /></h3>
+            <h3 class="subtitle">Profil
+                <button id="btnProfilBearbeiten">Profil bearbeiten</button></h3>
             <div class="boxInnerhalb"><asp:Label id="lblProfil" runat="server" Text="Ist noch leer"></asp:Label></div>
         </div>
         <div id="dashboard_neuePosts" class="abstandsbox">
