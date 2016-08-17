@@ -190,3 +190,8 @@ nav menu ul li a div:hover{
 #btnProfilbearbeiten[type=submit]{
     margin-left: 190px;
 }
+
+#lblLoginInformation{
+    float: right;
+    margin-right: 10px;
+}

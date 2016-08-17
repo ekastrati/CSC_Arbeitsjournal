@@ -12,6 +12,11 @@
             $("#header_loggedIn").load("Header/header_loggedIn.html");
         });
     </script>
+    <script type="text/javascript" src="../JS/mainscript.js"></script>
+     <script>
+         //  window.onload = httpGetAsync("/Benutzer/GetUserById?idBenutzer=1", setResultat);
+
+    </script>
 </head>
 <body>
     <!-- Header Einbindung -->
@@ -19,10 +24,10 @@
     <div id="containerNebenMenu">
         <h2 id="title">Passwort ändern</h2>
         <div class="boxInnerhalb">
-            <form id="changePassword" runat="server">
+            <form id="changePassword">
                 <label for="passwordNew">Passwort:</label>
                 <input id="passwordNew" type="password" placeholder="Passwort" />
-                <asp:Button ID="submitPasswordChange" runat="server" Text="Übernehmen"></asp:Button>
+                <button id="submitPasswordChange" type="submit" onclick="changePassword()">Übernehmen</button>
             </form>
         </div>
     </div>
