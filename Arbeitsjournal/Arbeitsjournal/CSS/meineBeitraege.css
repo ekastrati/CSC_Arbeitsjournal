@@ -53,7 +53,7 @@ div.kommentarDiv {
 
     div.kommentarDiv h1 {
         font-size: 22px;
-        margin-left: 5px;
+        margin-left: 8px;
         margin-top: 5px;
         margin-bottom: 5px;
     }
@@ -64,6 +64,10 @@ div.kommentarDiv {
         margin-right: 5px;
         margin-top: -30px;
         margin-bottom: 5px;
+    }
+
+    div.kommentarDiv p{
+       margin-left:8px;
     }
 
 #neuerBeitragBtn[type=submit] {
@@ -84,7 +88,7 @@ div.kommentarDiv {
         text-decoration: none;
     }
 
-.txtKommentar {
+#beitrag {
     display: block;
     font-size: 18px;
     margin-left: 20px;
