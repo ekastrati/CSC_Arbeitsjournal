@@ -31,6 +31,7 @@ namespace Arbeitsjournal
                 connector = new DataConnector();
                 query = String.Format(@"INSERT INTO `arbeitsjournaldb`.`benutzer` (`benutzername`, `passwort`, `email`, `vorname`, `name`) VALUES ('{0}', '{1}', '{2}', '{3}', '{4}')", this.txtUsername.Text, this.txtPassword.Text, this.txtEmail.Text, this.txtPrename.Text, this.txtName.Text);
                 int result = connector.DataInsert(query);
+                
                 if (result != 0 && result != -1)
                 {
                     user = new Dictionary<string, string>();

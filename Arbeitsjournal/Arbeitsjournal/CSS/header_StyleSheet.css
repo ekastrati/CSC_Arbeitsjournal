@@ -1,7 +1,7 @@
 ﻿body {
 }
 
-strong{
+strong {
     color: white;
 }
 
@@ -17,6 +17,24 @@ strong{
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ef2525', endColorstr='#820000',GradientType=1 ); /* IE6-9 */
 }
 
-.menuLinks{
+.menuLinks {
     box-shadow: 1px 1px 5px 0 black;
 }
+
+#abmelden{
+    margin-left:80%;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 16px;
+    background: #ef2525;
+    padding: 3px 5px 3px 5px;
+    border-radius: 8px;
+    border-color: #ef2525;
+    text-decoration: none;
+    position: absolute;
+}
+
+    #abmelden:hover {
+        background: #ff2626;
+        text-decoration: none;
+    }
