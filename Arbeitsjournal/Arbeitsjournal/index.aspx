@@ -11,12 +11,15 @@
     <script>
         $(function () {
             $("#header_loggedIn").load("Header/header_loggedIn.html");
+            
         });
     </script>
     <script type="text/javascript" src="../JS/mainscript.js"></script>
      <script>
-         window.onload = GetUserName();
-
+         window.onload = function () {
+             GetUserName();
+             document.getElementById("title").innerHTML(<%= Session["username"] %>);
+         }
     </script>
 </head>
 <body>
