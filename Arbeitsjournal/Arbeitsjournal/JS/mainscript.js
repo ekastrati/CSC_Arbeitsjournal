@@ -2,7 +2,7 @@
 var serverUrl = "http://localhost:50936/rest/api";
 
 
-var httpGetAsync = function(url, callback) {
+function httpGetAsync(url, callback) {
     var xmlHttp = new XMLHttpRequest();
     xmlHttp.onreadystatechange = function () {
         if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
@@ -39,4 +39,10 @@ function changePassword () {
     console.log("changePassword");
     httpPostAsync("/Benutzer/ChangePasswordByUserId?passwort=" + document.getElementById("passwordNew").value + "&idBenutzer=1", setResultat);
     console.log("password field value: ", document.getElementById("passwordNew").value);
+}
+
+function GetUserName() {
+
+    var username = '<%= Session["UserName"] %>';
+    alert(username);
 }

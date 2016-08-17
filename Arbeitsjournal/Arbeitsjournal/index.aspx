@@ -13,6 +13,11 @@
             $("#header_loggedIn").load("Header/header_loggedIn.html");
         });
     </script>
+    <script type="text/javascript" src="../JS/mainscript.js"></script>
+     <script>
+         window.onload = GetUserName();
+
+    </script>
 </head>
 <body>
     <form id="frmIndex" runat="server">
