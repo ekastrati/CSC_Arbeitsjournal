@@ -188,5 +188,13 @@ nav menu ul li a div:hover{
 }
 
 #btnProfilbearbeiten[type=submit]{
-    margin-left: 190px;
+    margin-left: 179px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 16px;
+    background: #ef2525;
+    padding: 2px 3px 2px 3px;
+    border-radius: 8px;
+    border-color: #ef2525;
+    text-decoration: none;
 }

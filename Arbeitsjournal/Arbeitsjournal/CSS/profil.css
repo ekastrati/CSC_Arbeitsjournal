@@ -172,14 +172,15 @@
 .bearbeitenBtn[type=submit]{
     margin-top: 215px;
     margin-left: 851px;
-    border-radius: 9px;
-    font-family: Arial;
+   font-family: Arial;
     color: #ffffff;
-    font-size: 18px;
+    font-size: 16px;
     background: #ef2525;
-    padding: 5px 5px 5px 5px;
-    border: solid #ef2525 2px;
+    padding: 3px 5px 3px 5px;
+    border-radius: 8px;
+    border-color: #ef2525;
     text-decoration: none;
+    position:absolute;
 }
     .bearbeitenBtn[type=submit]:hover {
         background: #ff2626;
