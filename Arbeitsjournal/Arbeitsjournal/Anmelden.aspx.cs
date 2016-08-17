@@ -38,6 +38,7 @@ namespace Arbeitsjournal
                     {
                         user["username"] = username;
                         Session["LoggedIn"] = user;
+                        Session["username"] = username;
                         foundWithTheEnteredDates = true;
                     }
                 }

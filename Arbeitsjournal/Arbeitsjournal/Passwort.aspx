@@ -14,7 +14,7 @@
     </script>
     <script type="text/javascript" src="../JS/mainscript.js"></script>
      <script>
-         //  window.onload = httpGetAsync("/Benutzer/GetUserById?idBenutzer=1", setResultat);
+         //  window.onload = httpGetAsync("/Benutzer/GetUserById?idBenutzer=1", setResultat, document.getElementById("lblLoginInformation"));
 
     </script>
 </head>
