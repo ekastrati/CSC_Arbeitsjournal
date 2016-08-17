@@ -16,18 +16,22 @@ nav {
 
 #home{
     background-color: #88BA41;
+        border-color: #88BA41;
 }
 
 #impressum{
     background-color: #850057;
+        border-color: #850057;
 }
 
 #registrieren{
     background-color: #588BA3;
+        border-color: #588BA3;
 }
 
 #anmelden{
     background-color: #003F60;
+        border-color: #003F60;
 }
 
 nav menu ul{
