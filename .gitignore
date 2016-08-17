@@ -260,3 +260,7 @@ _ReSharper.*
 bin
 obj
 packages
+Arbeitsjournal/DataLayer/Settings.settings
+*.cs
+Arbeitsjournal/DataLayer/Settings.Designer.cs
+Arbeitsjournal/DataLayer/app.config
