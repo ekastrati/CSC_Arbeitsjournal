@@ -33,9 +33,10 @@ namespace Arbeitsjournal
             //}
         }
 
-        protected void btnProfilbearbeiten_Click(object sender, EventArgs e)
+        protected void btnProfilBearbeiten_Click(object sender, EventArgs e)
         {
             Response.Redirect("/ProfilBearbeiten.aspx");
         }
+
     }
 }

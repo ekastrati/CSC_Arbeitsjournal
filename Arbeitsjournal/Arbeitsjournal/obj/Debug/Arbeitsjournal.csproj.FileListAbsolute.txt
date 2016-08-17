@@ -11,7 +11,6 @@ C:\Users\sroth4\Documents\GitHub\CSC_Arbeitsjournal\Arbeitsjournal\Arbeitsjourna
 C:\Users\sroth4\Documents\GitHub\CSC_Arbeitsjournal\Arbeitsjournal\Arbeitsjournal\obj\Debug\Arbeitsjournal.dll
 C:\Users\sroth4\Documents\GitHub\CSC_Arbeitsjournal\Arbeitsjournal\Arbeitsjournal\obj\Debug\Arbeitsjournal.pdb
 C:\Users\sroth4\Documents\GitHub\CSC_Arbeitsjournal\Arbeitsjournal\Arbeitsjournal\bin\DataLayer.pdb
-C:\Users\sroth4\Documents\GitHub\CSC_Arbeitsjournal\Arbeitsjournal\Arbeitsjournal\bin\DataLayer.exe
 C:\Users\ekastrati\Documents\GitHub\CSC_Arbeitsjournal\Arbeitsjournal\Arbeitsjournal\bin\Arbeitsjournal.dll.config
 C:\Users\ekastrati\Documents\GitHub\CSC_Arbeitsjournal\Arbeitsjournal\Arbeitsjournal\bin\Arbeitsjournal.dll
 C:\Users\ekastrati\Documents\GitHub\CSC_Arbeitsjournal\Arbeitsjournal\Arbeitsjournal\bin\Arbeitsjournal.pdb
@@ -20,3 +19,4 @@ C:\Users\ekastrati\Documents\GitHub\CSC_Arbeitsjournal\Arbeitsjournal\Arbeitsjou
 C:\Users\ekastrati\Documents\GitHub\CSC_Arbeitsjournal\Arbeitsjournal\Arbeitsjournal\obj\Debug\Arbeitsjournal.csprojResolveAssemblyReference.cache
 C:\Users\ekastrati\Documents\GitHub\CSC_Arbeitsjournal\Arbeitsjournal\Arbeitsjournal\obj\Debug\Arbeitsjournal.dll
 C:\Users\ekastrati\Documents\GitHub\CSC_Arbeitsjournal\Arbeitsjournal\Arbeitsjournal\obj\Debug\Arbeitsjournal.pdb
+C:\Users\sroth4\Documents\GitHub\CSC_Arbeitsjournal\Arbeitsjournal\Arbeitsjournal\bin\DataLayer.dll
