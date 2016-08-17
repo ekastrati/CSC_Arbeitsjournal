@@ -37,7 +37,7 @@ namespace Arbeitsjournal
                     if (username == txtUsername.Text)
                     {
                         user["username"] = username;
-                        Session["LoggedIn"] = username;
+                        Session["LoggedIn"] = user;
                         foundWithTheEnteredDates = true;
                     }
                 }

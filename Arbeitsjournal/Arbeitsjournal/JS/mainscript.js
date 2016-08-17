@@ -43,6 +43,6 @@ function changePassword () {
 
 function GetUserName() {
 
-    var username = '<%= Session["UserName"] %>';
+    var username = '<%= Session["LoggedIn"] %>';
     alert(username);
 }
