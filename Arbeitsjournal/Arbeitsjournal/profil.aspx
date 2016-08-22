@@ -10,7 +10,14 @@
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
     <script>
         $(function () {
-            $("#header_loggedIn").load("Header/header_loggedIn.html");
+            $("#header_loggedIn").load("Header/header_loggedIn.html", function () {
+                $("#benutzernameProfil").text('<%= Session["username"] %>');
+                $("#vornameProfil").text('<%= Session["vorname"] %>');
+                $("#nachnameProfil").text('<%= Session["name"] %>');
+                $("#emailProfil").text('<%= Session["email"] %>');
+                console.log("session values: ", '<%= Session[0].ToString() %>');
+                
+            });
         });
     </script>
 </head>
@@ -33,10 +40,10 @@
         <div id="emailDiv">
             <h1 class="profilDivH1">Email</h1>
         </div>
-        <div id="benutzername"></div>
-        <div id="vorname"></div>
-        <div id="nachname"></div>
-        <div id="email"></div>
+        <div id="benutzername"><p id="benutzernameProfil"></p></div>
+        <div id="vorname"><p id="vornameProfil"></p></div>
+        <div id="nachname"><p id="nachnameProfil"></p></div>
+        <div id="email"><p id="emailProfil"></p></div>
             <asp:Button ID="bearbeitenBtn" class="bearbeitenBtn" runat="server" Text="Profil bearbeiten"/>
         </form>
     </div>

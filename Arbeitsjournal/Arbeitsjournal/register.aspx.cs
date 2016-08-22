@@ -38,6 +38,7 @@ namespace Arbeitsjournal
                     user["username"] = txtUsername.Text;
                     user["prename"] = txtPrename.Text;
                     user["name"] = txtName.Text;
+                    user["email"] = txtEmail.Text;
                     Session["LoggedIn"] = user;
                     Response.Redirect("Index.aspx");
                 }

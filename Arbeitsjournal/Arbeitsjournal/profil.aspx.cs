@@ -9,9 +9,10 @@ namespace Arbeitsjournal
 {
     public partial class profil : System.Web.UI.Page
     {
+        private IDictionary<string, string> user;
         protected void Page_Load(object sender, EventArgs e)
         {
-
+           
         }
     }
 }
