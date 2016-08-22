@@ -37,6 +37,7 @@ namespace Arbeitsjournal
                     if (username == txtUsername.Text)
                     {
                         user["username"] = username;
+                        Session["userId"] = dr["idBenutzer"];
                         Session["LoggedIn"] = user;
                         Session["username"] = username;
                         Session["vorname"] = dr["vorname"];

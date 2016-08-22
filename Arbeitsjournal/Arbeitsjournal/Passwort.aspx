@@ -9,6 +9,7 @@
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
     <script>
         var username = '<%= Session["username"] %>';
+        var userId = '<%= Session["userId"] %>';
         $(function () {
             $("#header_loggedIn").load("Header/header_loggedIn.html");
         });

@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta content="JavaScript" name="mainscript" />
+    <%--<meta content="JavaScript" name="mainscript" />--%>
     <link rel="stylesheet" href="IndexStyleSheet.css" />
     <title>Arbeitsjournal</title>
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>

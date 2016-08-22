@@ -14,7 +14,7 @@ namespace Arbeitsjournal.WebService.Controllers
     {
         private DataConnector connector;
 
-        [HttpPost]
+        [HttpGet]
         public IHttpActionResult GetAllByUserId([FromUri] string passwort, [FromUri] int idBenutzer)
         {
             connector = new DataConnector();
@@ -22,25 +22,37 @@ namespace Arbeitsjournal.WebService.Controllers
             
             try{
             Benutzer benutzer = new Benutzer();
-            benutzer.Id = dataTable.Rows[0].["idBenutzer"];
-            benutzer.Username = dataTable.Rows[0].["benutzername"];
-            benutzer.Password = dataTable.Rows[0].["passwort"];
-            benutzer.Prename = dataTable.Rows[0].["vorname"];
-            benutzer.Name = dataTable.Rows[0].["name"];
-            benutzer.Email = dataTable.Rows[0].["email"];
 
              foreach (DataRow dr in dataTable.Rows)
             {
                 foreach (DataColumn dc in dataTable.Columns)
                 {
-                    
+                    benutzer.Id = (int)dr["idBenutzer"];
+                    benutzer.Username = (string) dr["benutzername"];
+                    benutzer.Password = (string) dr["passwort"];
+                    benutzer.Prename = (string) dr["vorname"];
+                    benutzer.Name = (string) dr["name"];
+                    benutzer.Email = (string) dr["email"];
                 }
             }
             return Ok(benutzer);
             }
             catch(Exception e){
-                return BadRequest("Fehler beim Abruf des Benutzers");
+                return BadRequest(String.Format("Fehler beim Abruf des Benutzers: {0}" , e.Message));
             }
+        }
+
+
+        [HttpPost]
+        public IHttpActionResult ChangePasswordByUserId([FromUri] string passwort, [FromUri] int idBenutzer)
+        {
+            connector = new DataConnector();
+            int result = connector.DataUpdate(string.Format(@"UPDATE arbeitsjournaldb.benutzer SET passwort = '{0}' WHERE idBenutzer = {1};", passwort, idBenutzer));
+            if (result > 0)
+            {
+                return Ok("Password erfolgreich geändert");
+            }
+            return BadRequest("Passwort konnte nicht geändert werden");
         }
 
         [HttpGet]
@@ -50,9 +62,14 @@ namespace Arbeitsjournal.WebService.Controllers
             DataTable dataTable = connector.DataSelect(string.Format(@"select benutzername, idBenutzer from benutzer where idBenutzer = '{0}';", idBenutzer));
 
             Benutzer benutzer = new Benutzer();
-            benutzer.Id = dataTable.Rows[0].["idBenutzer"];
-            benutzer.Username = dataTable.Rows[0].["username"];
-
+           foreach (DataRow dr in dataTable.Rows)
+            {
+                foreach (DataColumn dc in dataTable.Columns)
+                {
+                    benutzer.Id =  (int) dr["idBenutzer"];
+                    benutzer.Username = (string) dr["benutzername"];
+                }
+            }
             return Ok(benutzer);
         }
 
@@ -66,17 +83,6 @@ namespace Arbeitsjournal.WebService.Controllers
                 return BadRequest("Benutzerid konnte nicht geladen werden");
             }
             return Ok(dataTable.Rows[0]);
-        }
-
-        [HttpPost]
-        public IHttpActionResult ChangePasswordByUserId([FromUri] string passwort, [FromUri] int idBenutzer)
-        {
-            connector = new DataConnector();
-            int result = connector.DataUpdate(string.Format(@"UPDATE arbeitsjournaldb.benutzer SET passwort = '{0}' WHERE idBenutzer = {1};", passwort, idBenutzer));
-            if(result > 0){
-                return Ok("Password erfolgreich geändert");
-            }
-            return BadRequest("Passwort konnte nicht geändert werden");
         }
     }
 }

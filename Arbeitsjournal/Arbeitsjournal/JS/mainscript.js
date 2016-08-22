@@ -41,7 +41,7 @@ function setResultat(resultat, element) {
 function setResultatOnVariable(resultat, variable) {
     variable = resultat;
     console.log("variable: ", resultat);
-    httpPostAsync("/Benutzer/ChangePasswordByUserId?passwort=" + document.getElementById("passwordNew").value + "&idBenutzer=" + result.Table["idBenutzer"], setResultat, document.getElementById("null"));
+  //  httpPostAsync("/Benutzer/ChangePasswordByUserId?passwort=" + document.getElementById("passwordNew").value + "&idBenutzer=" + userId, setResultat, document.getElementById("null"));
     console.log("password field value: ", document.getElementById("passwordNew").value);
 };
 
@@ -50,12 +50,12 @@ function setResultatOnVariable(resultat, variable) {
 //}
 
 function changePassword() {
-    console.log("changePassword");
-    var result = httpGetAsync("/Benutzer/GetUserIdByUsername?benutzername=" + username, setResultatOnVariable, window.user);
-    console.log("result: ", result);
+    console.log("changePassword"); 
+    httpPostAsync("/Benutzer/ChangePasswordByUserId?passwort=" + document.getElementById("passwordNew").value + "&idBenutzer=" + userId, setResultat, document.getElementById("title"));
+    console.log("Methode ChangePasswordByUserId aufgerufen");
+  //  console.log("result: ", result);
 }
 
 function GetUserName() {
     '<%= IDictionary<string, string> user; if (Session["LoggedIn"] != null){ user = (IDictionary<string, string>)Session["LoggedIn"];} string username = (string)user["username"]; %>'
-    alert(username);
 }
