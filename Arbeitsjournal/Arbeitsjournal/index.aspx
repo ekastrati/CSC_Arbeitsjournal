@@ -10,10 +10,13 @@
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
     <script>
         $(function () {
-            $("#header_loggedIn").load("Header/header_loggedIn.html");
-            
+            $("#header_loggedIn").load("Header/header_loggedIn.html", "", function () {
+                $("#lblUsername").text('<%= Session["username"] %>');
+                console.log("username: ", $("#lblUsername").text());
+            });
         });
     </script>
+
     <script type="text/javascript" src="../JS/mainscript.js"></script>
      <script>
          window.onload = function () {

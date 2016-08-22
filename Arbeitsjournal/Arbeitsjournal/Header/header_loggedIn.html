@@ -10,11 +10,16 @@
     <script>
         //window.onload = httpGetAsync("/Benutzer/GetUserById?idBenutzer=1", setResultat);
     </script>
+    <style type="text/css">
+        #header > button, span, lable {
+            display: block;
+        }
+    </style>
     <title>Arbeitsjournal</title>
 </head>
 <body>
-        <div id="header" class="linearGradientFromLeft"><strong id="title">Arbeitsjournal CSC</strong><label id="lblUsername"></label><button id="abmelden" class="abstandsbox">logout</button><strong id="lblLoginInformation">Willkommen, </strong></div>
-        <div id="divMenu" class="menuLinks">
+    <div id="header" class="linearGradientFromLeft"><strong id="title">Arbeitsjournal CSC</strong><button id="abmelden" class="abstandsbox">logout</button><strong id="lblLoginInformation">Willkommen, <span id="lblUsername"></span></strong></div>
+    <div id="divMenu" class="menuLinks">
         <nav>
             <menu>
                 <ul>
