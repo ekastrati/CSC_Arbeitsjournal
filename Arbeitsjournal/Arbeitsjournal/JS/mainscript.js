@@ -1,15 +1,22 @@
 ﻿var xmlhttp = new XMLHttpRequest();
 var serverUrl = "http://localhost:50936/rest/api";
 
+window.user = null;
 
 function httpGetAsync(url, callback, element) {
+    console.log("httpGetAsync");
+    debugger;
     var xmlHttp = new XMLHttpRequest();
     xmlHttp.onreadystatechange = function () {
-        if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
+        if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
             callback(xmlHttp.responseText, element);
+            debugger;
+            return xmlHttp.responseText;
+        }
     }
     var serviceUrl = serverUrl + url;
     console.log("serviceUrl: ", serverUrl);
+    debugger;
     xmlHttp.open("GET", serviceUrl, true); // true for asynchronous 
     xmlHttp.send(null);
 };
@@ -34,21 +41,21 @@ function setResultat(resultat, element) {
 function setResultatOnVariable(resultat, variable) {
     variable = resultat;
     console.log("variable: ", resultat);
+    httpPostAsync("/Benutzer/ChangePasswordByUserId?passwort=" + document.getElementById("passwordNew").value + "&idBenutzer=" + result.Table["idBenutzer"], setResultat, document.getElementById("null"));
+    console.log("password field value: ", document.getElementById("passwordNew").value);
 };
 
 //window.onload = function () {
 //    document.getElementById("submitPasswordChange").onclick = httpPostAsync("/Benutzer/ChangePasswordByUserId?passwort=" + document.getElementById("passwordNew").value + "&idBenutzer=1", setResultat);
 //}
 
-function changePassword () {
+function changePassword() {
     console.log("changePassword");
-    httpPostAsync("/Benutzer/ChangePasswordByUserId?passwort=" + document.getElementById("passwordNew").value + "&idBenutzer=1", setResultat, document.getElementById("null"));
-    console.log("password field value: ", document.getElementById("passwordNew").value);
+    var result = httpGetAsync("/Benutzer/GetUserIdByUsername?benutzername=" + username, setResultatOnVariable, window.user);
+    console.log("result: ", result);
 }
 
 function GetUserName() {
-
     '<%= IDictionary<string, string> user; if (Session["LoggedIn"] != null){ user = (IDictionary<string, string>)Session["LoggedIn"];} string username = (string)user["username"]; %>'
-    var username = '<%= username %>';
     alert(username);
 }

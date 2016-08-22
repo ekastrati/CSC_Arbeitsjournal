@@ -8,6 +8,7 @@
     <title>Passwort ändern</title>
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
     <script>
+        var username = '<%= Session["username"] %>';
         $(function () {
             $("#header_loggedIn").load("Header/header_loggedIn.html");
         });
@@ -27,7 +28,8 @@
             <form id="changePassword">
                 <label for="passwordNew">Passwort:</label>
                 <input id="passwordNew" type="password" placeholder="Passwort" />
-                <button id="submitPasswordChange" type="submit" onclick="changePassword()">Übernehmen</button>
+                <input id="submitPasswordChanged" type="button"  onclick="changePassword()" value="Übernehmen" />
+               <%-- <button id="submitPasswordChange" type="submit" onclick="changePassword()">Übernehmen</button>--%>
             </form>
         </div>
     </div>
