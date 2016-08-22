@@ -64,6 +64,7 @@
     <Content Include="CSS\header_StyleSheet.css" />
     <Content Include="Impressum.aspx" />
     <Content Include="CSS\ImpressumStyleSheet.css" />
+    <Content Include="JS\profil.js" />
     <Content Include="MDL\bower.json" />
     <Content Include="MDL\LICENSE" />
     <Content Include="MDL\material.min.css.map" />

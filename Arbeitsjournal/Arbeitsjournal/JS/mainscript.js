@@ -1,7 +1,6 @@
 ﻿var xmlhttp = new XMLHttpRequest();
 var serverUrl = "http://localhost:50936/rest/api";
 
-
 function httpGetAsync(url, callback, element) {
     var xmlHttp = new XMLHttpRequest();
     xmlHttp.onreadystatechange = function () {

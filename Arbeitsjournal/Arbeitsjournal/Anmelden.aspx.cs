@@ -39,6 +39,9 @@ namespace Arbeitsjournal
                         user["username"] = username;
                         Session["LoggedIn"] = user;
                         Session["username"] = username;
+                        Session["vorname"] = dr["vorname"];
+                        Session["name"] = dr["name"];
+                        Session["email"] = dr["email"];
                         foundWithTheEnteredDates = true;
                     }
                 }

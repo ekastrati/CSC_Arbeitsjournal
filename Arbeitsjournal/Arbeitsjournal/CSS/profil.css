@@ -17,6 +17,10 @@
         text-align: center;
     }
 
+    #profilDiv p{
+        margin-right:10px;
+    }
+
 #benutzernameDiv {
     height: 50px;
     width: 200px;

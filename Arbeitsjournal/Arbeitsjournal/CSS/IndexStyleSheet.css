@@ -32,7 +32,7 @@ div {
 }
 
 .subtitle {
-    padding-left: 30px;
+    padding-left: 20px;
 }
 
 #titleOfEachSite {
@@ -76,7 +76,7 @@ div {
     min-width: 100%;
     width: 100%;
     height: auto;
-    float: left;
+    margin-left:-50px;
 }
 
 #dashboard_neuePosts {
@@ -89,7 +89,7 @@ div {
 
 /* Das ist die Box in den kleinen Kästchen */
 .boxInnerhalb {
-    margin: 10px 10px 10px 25px;
+    margin: 5px 10px 10px 10px;
     padding: 2px;
     min-height: 100px;
     border-width: 2px;
@@ -188,7 +188,7 @@ nav menu ul li a div {
 }
 
 #btnProfilBearbeiten{
-    margin-left: 174px;
+    margin-left: 190px;
     font-family: Arial;
     color: #ffffff;
     font-size: 16px;
