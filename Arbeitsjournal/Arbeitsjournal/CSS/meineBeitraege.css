@@ -70,7 +70,7 @@ div.kommentarDiv {
        margin-left:8px;
     }
 
-#neuerBeitragBtn[type=submit] {
+a {
     float: right;
     margin-top: -57px;
     font-family: Arial;
@@ -83,7 +83,7 @@ div.kommentarDiv {
     text-decoration: none;
 }
 
-    #neuerBeitragBtn[type=submit]:hover {
+   a:hover {
         background: #FF2626;
         text-decoration: none;
     }

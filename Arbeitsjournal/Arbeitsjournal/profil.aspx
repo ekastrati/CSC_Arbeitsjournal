@@ -11,6 +11,7 @@
     <script>
         $(function () {
             $("#header_loggedIn").load("Header/header_loggedIn.html", function () {
+                $("#lblUsername").text('<%= Session["username"] %>');
                 $("#benutzernameProfil").text('<%= Session["username"] %>');
                 $("#vornameProfil").text('<%= Session["vorname"] %>');
                 $("#nachnameProfil").text('<%= Session["name"] %>');

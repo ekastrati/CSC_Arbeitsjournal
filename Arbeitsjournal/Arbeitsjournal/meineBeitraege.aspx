@@ -10,7 +10,9 @@
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
     <script>
         $(function () {
-            $("#header_loggedIn").load("Header/header_loggedIn.html");
+            $("#header_loggedIn").load("Header/header_loggedIn.html", "", function () {
+                $("#lblUsername").text('<%= Session["username"] %>');
+            });
         });
     </script>
 </head>
@@ -19,7 +21,7 @@
     <h1 id="titleOfEachSite">Meine Beträge</h1>
     <div class="mainDiv">
         <form id="frmJournal" runat="server">
-            <asp:Button ID="neuerBeitragBtn" runat="server" Text="Neuer Beitrag" />
+            <a href="/neuerBeitrag.aspx">Neuer Beitrag</a>
             <div class="beitragDiv">
                 <h1>Beitrag vom 08.08.2016</h1>
                 <p id="beitrag">

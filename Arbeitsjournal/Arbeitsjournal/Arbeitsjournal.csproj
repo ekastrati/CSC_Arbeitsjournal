@@ -59,6 +59,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Anmelden.aspx" />
+    <Content Include="CSS\neuerBeitrag.css" />
     <Content Include="Header\header_loggedIn.html" />
     <Content Include="Header\header_notLoggedIn.html" />
     <Content Include="CSS\header_StyleSheet.css" />
@@ -91,6 +92,7 @@
     <Content Include="CSS\mitarbeiter.css" />
     <Content Include="CSS\notLoggedIn_StyleSheet.css" />
     <Content Include="blabla.html" />
+    <Content Include="neuerBeitrag.aspx" />
     <Content Include="Passwort.aspx" />
     <Content Include="profil.aspx" />
     <Content Include="CSS\profil.css" />
@@ -132,6 +134,13 @@
     </Compile>
     <Compile Include="mitarbeiter.aspx.cs.designer.cs">
       <DependentUpon>mitarbeiter.aspx.cs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="neuerBeitrag.aspx.cs">
+      <DependentUpon>neuerBeitrag.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="neuerBeitrag.aspx.designer.cs">
+      <DependentUpon>neuerBeitrag.aspx</DependentUpon>
     </Compile>
     <Compile Include="Passwort.aspx.cs">
       <DependentUpon>Passwort.aspx</DependentUpon>
