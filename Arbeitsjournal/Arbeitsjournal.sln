@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arbeitsjournal", "Arbeitsjo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataLayer", "DataLayer\DataLayer.csproj", "{5D1BFD23-8C8F-4990-814E-76804DEFE200}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arbeitsjournal.WebService", "Arbeitsjournal.WebService\Arbeitsjournal.WebService.csproj", "{7E411CC9-874B-4B4C-A969-C96390E6F0F6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{5D1BFD23-8C8F-4990-814E-76804DEFE200}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5D1BFD23-8C8F-4990-814E-76804DEFE200}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5D1BFD23-8C8F-4990-814E-76804DEFE200}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E411CC9-874B-4B4C-A969-C96390E6F0F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E411CC9-874B-4B4C-A969-C96390E6F0F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E411CC9-874B-4B4C-A969-C96390E6F0F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E411CC9-874B-4B4C-A969-C96390E6F0F6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
