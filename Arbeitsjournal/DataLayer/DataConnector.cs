@@ -9,6 +9,7 @@ using System.IO;
 
 namespace DataLayer
 {
+    // This class is for the connection with the database
     public class DataConnector
     {
     //    protected OleDbDataAdapter DataAdapter = new OleDbDataAdapter();
