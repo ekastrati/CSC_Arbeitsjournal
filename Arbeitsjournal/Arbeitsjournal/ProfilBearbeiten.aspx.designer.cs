@@ -13,6 +13,15 @@ namespace Arbeitsjournal {
     public partial class ProfilBearbeiten {
         
         /// <summary>
+        /// lblFehlermeldung-Steuerelement
+        /// </summary>
+        /// <remarks>
+        /// Automatisch generiertes Feld
+        /// Um dies zu ändern, verschieben Sie die Felddeklaration aus der Designerdatei in eine Code-Behind-Datei.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblFehlermeldung;
+        
+        /// <summary>
         /// changeProfileData-Steuerelement
         /// </summary>
         /// <remarks>

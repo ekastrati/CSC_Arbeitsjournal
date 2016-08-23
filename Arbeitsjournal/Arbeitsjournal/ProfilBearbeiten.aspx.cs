@@ -12,23 +12,39 @@ namespace Arbeitsjournal
     {
         private DataConnector connector;
         private IDictionary<string, string> user;
+        private string userPassword;
         private string query = @"update `arbeitsjournaldb`.`benutzer` ";
 
         protected void Page_Load(object sender, EventArgs e)
         {
             connector = new DataConnector();
             user = (IDictionary<string, string>)Session["LoggedIn"];
+            userPassword = (string)Session["password"];
         }
 
         protected void passwordChange_Click(object sender, EventArgs e)
         {
-            Response.Redirect("/Passwort.aspx");
+            if (this.txtPassword.Text == Convert.ToString(Session["password"]))
+            {
+                Response.Redirect("/Passwort.aspx");
+            }
+            else
+            {
+                this.lblFehlermeldung.Text = "BITTE ZUERST DAS RICHTIGE PASSWORT EINGEBEN, DAMIT DIE ÄNDERUNGEN VORGENOMMEN WERDEN KÖNNEN";
+            }
         }
 
         protected void applyChanges_Click(object sender, EventArgs e)
         {
-            DecideWitchDataMustBeChanged();
-            Response.Redirect("/Index.aspx");
+            if (this.txtPassword.Text == Convert.ToString(Session["password"]))
+            {
+                DecideWitchDataMustBeChanged();
+                Response.Redirect("/Index.aspx");
+            }
+            else
+            {
+                this.lblFehlermeldung.Text = "BITTE ZUERST DAS RICHTIGE PASSWORT EINGEBEN, DAMIT DIE ÄNDERUNGEN VORGENOMMEN WERDEN KÖNNEN";
+            }
         }
 
         private void DecideWitchDataMustBeChanged()

@@ -43,6 +43,7 @@ namespace Arbeitsjournal
                         Session["vorname"] = dr["vorname"];
                         Session["name"] = dr["name"];
                         Session["email"] = dr["email"];
+                        Session["password"] = dr["passwort"];
                         foundWithTheEnteredDates = true;
                     }
                 }

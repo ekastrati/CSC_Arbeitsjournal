@@ -58,6 +58,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AbonnierePersonen.aspx" />
     <Content Include="Anmelden.aspx" />
     <Content Include="CSS\neuerBeitrag.css" />
     <Content Include="Header\header_loggedIn.html" />
@@ -65,6 +66,8 @@
     <Content Include="CSS\header_StyleSheet.css" />
     <Content Include="Impressum.aspx" />
     <Content Include="CSS\ImpressumStyleSheet.css" />
+    <Content Include="JS\abonnierepersonenscript.js" />
+    <Content Include="JS\mitarbeiterscript.js" />
     <Content Include="JS\profil.js" />
     <Content Include="MDL\bower.json" />
     <Content Include="MDL\LICENSE" />
@@ -102,6 +105,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AbonnierePersonen.aspx.cs">
+      <DependentUpon>AbonnierePersonen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AbonnierePersonen.aspx.designer.cs">
+      <DependentUpon>AbonnierePersonen.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Anmelden.aspx.cs">
       <DependentUpon>Anmelden.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

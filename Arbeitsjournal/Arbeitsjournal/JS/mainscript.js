@@ -45,21 +45,14 @@ function setResultatOnVariable(resultat, variable) {
     console.log("password field value: ", document.getElementById("passwordNew").value);
 };
 
-//window.onload = function () {
-//    document.getElementById("submitPasswordChange").onclick = httpPostAsync("/Benutzer/ChangePasswordByUserId?passwort=" + document.getElementById("passwordNew").value + "&idBenutzer=1", setResultat);
-//}
-
 function changePassword() {
-    console.log("changePassword"); 
+    console.log("changePassword");
     httpPostAsync("/Benutzer/ChangePasswordByUserId?passwort=" + document.getElementById("passwordNew").value + "&idBenutzer=" + userId, setResultat, document.getElementById("title"));
     console.log("Methode ChangePasswordByUserId aufgerufen");
+   // window.location.href = "https://www.google.ch/";
   //  console.log("result: ", result);
 }
 
 function GetUserName() {
     '<%= IDictionary<string, string> user; if (Session["LoggedIn"] != null){ user = (IDictionary<string, string>)Session["LoggedIn"];} string username = (string)user["username"]; %>'
-}
-
-function subscribeAPerson() {
-
 }

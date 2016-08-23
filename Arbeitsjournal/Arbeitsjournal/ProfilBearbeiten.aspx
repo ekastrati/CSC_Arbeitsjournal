@@ -17,6 +17,7 @@
     <!-- Header Einbindung -->
     <div id="header_loggedIn"></div>
     <div id="containerNebenMenu">
+        <asp:Label ID="lblFehlermeldung" runat="server" ForeColor="Red"></asp:Label>
         <h2 id="title">Profil bearbeiten</h2>
             <form id="changeProfileData" runat="server"  method="post">
             <div class="boxInnerhalb">

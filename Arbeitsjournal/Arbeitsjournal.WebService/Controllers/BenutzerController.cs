@@ -29,7 +29,6 @@ namespace Arbeitsjournal.WebService.Controllers
                 {
                     benutzer.Id = (int)dr["idBenutzer"];
                     benutzer.Username = (string) dr["benutzername"];
-                    benutzer.Password = (string) dr["passwort"];
                     benutzer.Prename = (string) dr["vorname"];
                     benutzer.Name = (string) dr["name"];
                     benutzer.Email = (string) dr["email"];
