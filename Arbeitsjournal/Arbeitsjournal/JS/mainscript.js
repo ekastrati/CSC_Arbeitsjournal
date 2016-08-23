@@ -59,3 +59,7 @@ function changePassword() {
 function GetUserName() {
     '<%= IDictionary<string, string> user; if (Session["LoggedIn"] != null){ user = (IDictionary<string, string>)Session["LoggedIn"];} string username = (string)user["username"]; %>'
 }
+
+function subscribeAPerson() {
+
+}

@@ -92,7 +92,6 @@
     <Content Include="CSS\mitarbeiter.css" />
     <Content Include="CSS\notLoggedIn_StyleSheet.css" />
     <Content Include="blabla.html" />
-    <Content Include="neuerBeitrag.aspx" />
     <Content Include="Passwort.aspx" />
     <Content Include="profil.aspx" />
     <Content Include="CSS\profil.css" />
@@ -134,13 +133,6 @@
     </Compile>
     <Compile Include="mitarbeiter.aspx.cs.designer.cs">
       <DependentUpon>mitarbeiter.aspx.cs.cs</DependentUpon>
-    </Compile>
-    <Compile Include="neuerBeitrag.aspx.cs">
-      <DependentUpon>neuerBeitrag.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="neuerBeitrag.aspx.designer.cs">
-      <DependentUpon>neuerBeitrag.aspx</DependentUpon>
     </Compile>
     <Compile Include="Passwort.aspx.cs">
       <DependentUpon>Passwort.aspx</DependentUpon>
