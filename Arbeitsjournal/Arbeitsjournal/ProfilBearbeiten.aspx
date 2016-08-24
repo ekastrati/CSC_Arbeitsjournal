@@ -50,7 +50,7 @@
                 </div>
 
                 <div class="boxInnerhalb">
-                    <strong>Zur Abänderung der Benutzerdaten muss das aktuelle Passwort eingegeben werden</strong>
+                    <strong>Zur Abänderung der Benutzerdaten oder des Passwortes muss das aktuelle Passwort eingegeben werden</strong>
                 </div>
                 <div class="boxInnerhalb">
                     <div class="containerDesInputContainers">
