@@ -21,7 +21,7 @@ namespace Arbeitsjournal.WebService.Controllers
         /// <param name="thisUserToFind"> true if you want to find only one person, else if you want for instance subscribe many people this on false</param>
         /// <returns>a benutzer or a list of benutzers</returns>
         [HttpGet]
-        public IHttpActionResult GetAllByUsername([FromUri] int benutzername, [FromUri] bool thisUserToFind)
+        public IHttpActionResult GetAllByUsername([FromUri] string benutzername, [FromUri] bool thisUserToFind)
         {
             connector = new DataConnector();
             DataTable dataTable;
