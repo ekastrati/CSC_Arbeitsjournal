@@ -14,30 +14,62 @@ namespace Arbeitsjournal.WebService.Controllers
     {
         private DataConnector connector;
 
+        /// <summary>
+        /// / to find a certain benutzer
+        /// </summary>
+        /// <param name="idBenutzer"></param>
+        /// <param name="thisUserToFind"> true if you want to find only one person, else if you want for instance subscribe many people this on false</param>
+        /// <returns>a benutzer or a list of benutzers</returns>
         [HttpGet]
-        public IHttpActionResult GetAllByUserId([FromUri] string passwort, [FromUri] int idBenutzer)
+        public IHttpActionResult GetAllByUsername([FromUri] int benutzername, [FromUri] bool thisUserToFind)
         {
             connector = new DataConnector();
-            DataTable dataTable = connector.DataSelect(string.Format(@"select * from benutzer where idBenutzer = '{0}';", idBenutzer));
-            
-            try{
-            Benutzer benutzer = new Benutzer();
-
-             foreach (DataRow dr in dataTable.Rows)
+            DataTable dataTable;
+            try
             {
-                foreach (DataColumn dc in dataTable.Columns)
+                if (thisUserToFind)
                 {
-                    benutzer.Id = (int)dr["idBenutzer"];
-                    benutzer.Username = (string) dr["benutzername"];
-                    benutzer.Prename = (string) dr["vorname"];
-                    benutzer.Name = (string) dr["name"];
-                    benutzer.Email = (string) dr["email"];
+                    dataTable = connector.DataSelect(string.Format(@"select * from benutzer where benutzername = '{0}';", benutzername));
+
+                    Benutzer benutzer = new Benutzer();
+
+                    foreach (DataRow dr in dataTable.Rows)
+                    {
+                        foreach (DataColumn dc in dataTable.Columns)
+                        {
+                            benutzer.Id = (int)dr["idBenutzer"];
+                            benutzer.Username = (string)dr["benutzername"];
+                            benutzer.Prename = (string)dr["vorname"];
+                            benutzer.Name = (string)dr["name"];
+                            benutzer.Email = (string)dr["email"];
+                        }
+                    }
+                    return Ok(benutzer);
                 }
+                else
+                {
+                    dataTable = connector.DataSelect(string.Format(@"select * from benutzer where benutzername != '{0}';", benutzername));
+                    List<Benutzer> benutzerList = new List<Benutzer>();
+                    foreach (DataRow dr in dataTable.Rows)
+                    {
+                        Benutzer benutzer = new Benutzer();
+                        foreach (DataColumn dc in dataTable.Columns)
+                        {
+                            benutzer.Id = (int)dr["idBenutzer"];
+                            benutzer.Username = (string)dr["benutzername"];
+                            benutzer.Prename = (string)dr["vorname"];
+                            benutzer.Name = (string)dr["name"];
+                            benutzer.Email = (string)dr["email"];
+                        }
+                        benutzerList.Add(benutzer);
+                    }
+                    return Ok(benutzerList);
+                }
+
             }
-            return Ok(benutzer);
-            }
-            catch(Exception e){
-                return BadRequest(String.Format("Fehler beim Abruf des Benutzers: {0}" , e.Message));
+            catch (Exception e)
+            {
+                return BadRequest(String.Format("Fehler beim Abruf des Benutzers: {0}", e.Message));
             }
         }
 
@@ -61,12 +93,12 @@ namespace Arbeitsjournal.WebService.Controllers
             DataTable dataTable = connector.DataSelect(string.Format(@"select benutzername, idBenutzer from benutzer where idBenutzer = '{0}';", idBenutzer));
 
             Benutzer benutzer = new Benutzer();
-           foreach (DataRow dr in dataTable.Rows)
+            foreach (DataRow dr in dataTable.Rows)
             {
                 foreach (DataColumn dc in dataTable.Columns)
                 {
-                    benutzer.Id =  (int) dr["idBenutzer"];
-                    benutzer.Username = (string) dr["benutzername"];
+                    benutzer.Id = (int)dr["idBenutzer"];
+                    benutzer.Username = (string)dr["benutzername"];
                 }
             }
             return Ok(benutzer);

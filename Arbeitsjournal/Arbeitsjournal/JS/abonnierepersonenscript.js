@@ -1,11 +1,12 @@
-﻿
+﻿var xmlhttp = new XMLHttpRequest();
+var serverUrl = "http://localhost:50936/rest/api";
 $(document).ready(function () {
     createDropDownList();
 });
 
 var peopleList;
 
-function setResultatOnPeopleList(resultat) {
+function setResultatOnPeopleList(resultat, unnötigesElement) {
     peopleList = resultat;
     console.log("resultat: ", resultat);
 };
@@ -14,19 +15,20 @@ function createDropDownList() {
     var subscribeBox = document.getElementById("subscribeBox");
 
     // Creates a "select" element (a drop down list).
-    var select = document.createElement("select");
-    select.id = "toPossiblySubscribe";
+ //   var select = document.createElement("select");
+   // select.id = "toPossiblySubscribe";
 
     var selectPeople = document.getElementById("selectPeople");
 
-    httpPostAsnc();
+    httpGetAsync("/Benutzer/GetAllByUsername?benutzername=" + username + "&thisUserToFind=false", setResultatOnPeopleList, document.getElementById("title"));
+    console.log(peopleList);
     //subscribeBox.appendChild(select);
     // Constructor arguments:  text, value, defaultSelected, selected
     //  select.appendChild(new Option("my label 1", "my value 1", false, false));
     selectPeople.appendChild(new Option("my label 1", "my value 1", false, false));
-    for (i = 0, max = people.length; i > max; i++) {
+//    for (i = 0, max = people.length; i > max; i++) {
 
-    }
+  //  }
 }
 
 function subscribePerson() {
