@@ -54,7 +54,6 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
-    <Compile Include="TestComponent\Tester.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
