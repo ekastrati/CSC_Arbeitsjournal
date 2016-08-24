@@ -74,7 +74,6 @@
     <Content Include="MDL\material.min.css.map" />
     <Content Include="MDL\material.min.js.map" />
     <Content Include="MDL\package.json" />
-    <Content Include="ClassDiagram1.cd" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

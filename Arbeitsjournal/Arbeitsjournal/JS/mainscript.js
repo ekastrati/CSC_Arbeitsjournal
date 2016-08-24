@@ -49,6 +49,7 @@ function changePassword() {
     console.log("changePassword");
     httpPostAsync("/Benutzer/ChangePasswordByUserId?passwort=" + document.getElementById("passwordNew").value + "&idBenutzer=" + userId, setResultat, document.getElementById("title"));
     console.log("Methode ChangePasswordByUserId aufgerufen");
+    window.location.href = "../index.aspx";
    // window.location.href = "https://www.google.ch/";
   //  console.log("result: ", result);
 }
