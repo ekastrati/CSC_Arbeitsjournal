@@ -6,7 +6,6 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Arbeitsjournal</title>
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
-    <script type="text/javascript" src="/JS/abonnierepersonenscript.js"></script>
     <script>
         var username = '<%= Session["username"] %>';
         $(function () {
@@ -16,7 +15,7 @@
             });
         });
     </script>
-
+    <script type="text/javascript" src="/JS/abonnierepersonenscript.js"></script>
     <script type="text/javascript" src="/JS/mitarbeiterscript.js"></script>
 </head>
 <body>
@@ -25,7 +24,10 @@
     <div id="containerNebenMenu">
         <h2 id="title">Personen Abonnieren</h2>
         <div id="subscribeBox" class="leftbar">
-            <select id="selectPeople"></select>
+            <div class="abstandsbox">
+                <select id="selectPeople"></select>
+            </div>
+            <button id="btnAbonnieren" onclick="subscribePerson()">Abonnieren</button>
         </div>
         <div class="sidebar">
         </div>
