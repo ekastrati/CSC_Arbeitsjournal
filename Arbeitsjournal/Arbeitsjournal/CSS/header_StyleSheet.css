@@ -9,6 +9,11 @@ strong {
     box-shadow: 1px 1px 5px 0 black;
 }
 
+    #header > button, span, label {
+        display: flexbox;
+        margin-right: 200px;
+    }
+
 .linearGradientFromLeft {
     background-color: #ef2525; /* Old browsers */
     background: -moz-linear-gradient(left, #ef2525 0%, #800000 44%, #820000 100%); /* Firefox 3.6-15 */
@@ -21,8 +26,8 @@ strong {
     box-shadow: 1px 1px 5px 0 black;
 }
 
-#abmelden{
-    margin-left:80%;
+#abmelden {
+    margin-left: 90%;
     font-family: Arial;
     color: #ffffff;
     font-size: 16px;
@@ -32,6 +37,8 @@ strong {
     border-color: #ef2525;
     text-decoration: none;
     position: absolute;
+    display: block;
+    margin-top: -20px;
 }
 
     #abmelden:hover {
