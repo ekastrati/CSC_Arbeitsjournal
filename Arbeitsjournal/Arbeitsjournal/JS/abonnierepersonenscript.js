@@ -25,13 +25,8 @@ function unnötig(resultat){
 }
 
 function createDropDownList() {
-    var subscribeBox = document.getElementById("subscribeBox");
-
     // Creates a "select" element (a drop down list).
  //   var select = document.createElement("select");
-   // select.id = "toPossiblySubscribe";
-
-    var selectPeople = document.getElementById("selectPeople");
 
     httpGetAsync("/Benutzer/GetAllByUsername?benutzername=" + username + "&thisUserToFind=false", setResultatOnPeopleList);
   
@@ -42,6 +37,7 @@ function createDropDownList() {
 
 function subscribePerson() {
     var select = document.getElementById("selectPeople");
+    debugger;
     var selectedPersonToSubscribe = select.options[select.selectedIndex].text // .value gives the value and .text gives the text INNERHTML
     console.log("subscribe person");
     httpPostAsync("/Abonnieren/PersonSubcribesPerson?benutzername=" + username + "&wantsToSubscribeBenutzername=" + selectedPersonToSubscribe, unnötig);

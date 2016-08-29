@@ -17,7 +17,7 @@
     <div id="header_notLoggedIn"></div>
     <div id="impressumDIV">
         <h1>Impressum</h1>
-        <p>Diese Website ist unter dem Aufrag von CSC Switzerland GmbH erstellt worden.Sie ist zur Veröffentlichung der eigenen Arbeisjournale entwickelt worden. Jeder Arbeitnehmer von CSC hat hier die Möglichkeit sein eigenes Arbeitsjournal hochzuladen.</p>
+        <p>Diese Website ist unter dem Auftrag von CSC Switzerland GmbH erstellt worden. Sie ist zur Veröffentlichung der eigenen Arbeisjournale entwickelt worden. Jeder Arbeitnehmer von CSC hat hier die Möglichkeit sein eigenes Arbeitsjournal hochzuladen.</p>
         <strong>CSC Switzerland GmbH</strong>
         <p>Morgenstrasse 129</p>
     </div>
