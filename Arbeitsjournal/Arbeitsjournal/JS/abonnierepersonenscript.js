@@ -42,6 +42,7 @@ function subscribePerson() {
     console.log("subscribe person");
     httpPostAsync("/Abonnieren/PersonSubcribesPerson?benutzername=" + username + "&wantsToSubscribeBenutzername=" + selectedPersonToSubscribe, unnötig);
     console.log("Sollte jetzt subscribed sein");
+    window.location.href = "../mitarbeiter.aspx";
 }
 
 function cancelSubscriptionFromPerson() {

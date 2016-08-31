@@ -10,12 +10,12 @@ using System.IO;
 namespace DataLayer
 {
     // This class is for the connection with the database
-    public class DataConnector
+    public class DataConnector : IDataConnector
     {
     //    protected OleDbDataAdapter DataAdapter = new OleDbDataAdapter();
         public string errorMessage = "";
         protected MySqlDataAdapter dataAdapter = new MySql.Data.MySqlClient.MySqlDataAdapter();
-        private const string connectionString = "Persist Security Info=False;server=localhost;database=ArbeitsjournalDB;uid=root;password=123456";
+        protected const string connectionString = "Persist Security Info=False;server=localhost;database=ArbeitsjournalDB;uid=root;password=123456";
         public DataConnector()
         {
             MySqlConnection connection = new MySqlConnection(connectionString);

@@ -98,9 +98,9 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DataLayer\DataLayer.csproj">
+    <ProjectReference Include="..\DataLayer\Arbeitsjournal.DataAccess.csproj">
       <Project>{5d1bfd23-8c8f-4990-814e-76804defe200}</Project>
-      <Name>DataLayer</Name>
+      <Name>Arbeitsjournal.DataAccess</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

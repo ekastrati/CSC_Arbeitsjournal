@@ -25,6 +25,7 @@ namespace Arbeitsjournal.WebService.Controllers
         {
             connector = new DataConnector();
             DataTable dataTable;
+            
             try
             {
                 if (thisUserToFind)
@@ -35,6 +36,8 @@ namespace Arbeitsjournal.WebService.Controllers
 
                     foreach (DataRow dr in dataTable.Rows)
                     {
+                        // 1. BenutzerMapper.MapBenutzer (DataRow benutzerEntry) -> Benutzer objekt zurück -> arrayList.add(
+
                         foreach (DataColumn dc in dataTable.Columns)
                         {
                             benutzer.Id = (int)dr["idBenutzer"];
@@ -52,16 +55,16 @@ namespace Arbeitsjournal.WebService.Controllers
                     List<Benutzer> benutzerList = new List<Benutzer>();
                     foreach (DataRow dr in dataTable.Rows)
                     {
-                        Benutzer benutzer = new Benutzer();
                         foreach (DataColumn dc in dataTable.Columns)
                         {
+                            Benutzer benutzer = new Benutzer();
                             benutzer.Id = (int)dr["idBenutzer"];
                             benutzer.Username = (string)dr["benutzername"];
                             benutzer.Prename = (string)dr["vorname"];
                             benutzer.Name = (string)dr["name"];
                             benutzer.Email = (string)dr["email"];
+                            benutzerList.Add(benutzer);
                         }
-                        benutzerList.Add(benutzer);
                     }
                     return Ok(benutzerList);
                 }
@@ -90,7 +93,7 @@ namespace Arbeitsjournal.WebService.Controllers
         public IHttpActionResult GetUserById([FromUri] string idBenutzer)
         {
             connector = new DataConnector();
-            DataTable dataTable = connector.DataSelect(string.Format(@"select benutzername, idBenutzer from benutzer where idBenutzer = '{0}';", idBenutzer));
+            DataTable dataTable = connector.DataSelect(string.Format(@"select benutzername, idBenutzer from benutzer where idBenutzer = {0};", idBenutzer));
 
             Benutzer benutzer = new Benutzer();
             foreach (DataRow dr in dataTable.Rows)

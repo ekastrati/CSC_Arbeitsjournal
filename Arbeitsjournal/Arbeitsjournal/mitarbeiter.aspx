@@ -16,8 +16,8 @@
             });
         });
     </script>
-        <script type="text/javascript" src="/JS/abonnierepersonenscript.js"></script>
-        <script type="text/javascript" src="/JS/mitarbeiterscript.js"></script>
+        <script type="text/javascript" src="JS/abonnierepersonenscript.js"></script>
+        <script type="text/javascript" src="JS/mitarbeiterscript.js"></script>
 </head>
 <body>
     <div id="header_loggedIn"></div>
@@ -25,20 +25,7 @@
     <div id="abonniertDiv">
         <h1>Abonniert</h1>
         <select id="abonniertDropdown" name="abonniertDropdown" onclick="showJournalOfName()" size="60">
-        <optgroup label="Namen mit A">
-          <option label="Anna">Anna</option>
-          <option label="Achim">Achim</option>
-          <option label="August">August</option>
-        </optgroup>
-        <optgroup label="Namen mit B">
-          <option label="Berta">Berta</option>
-          <option label="Barbara">Barbara</option>
-          <option label="Bernhard">Bernhard</option>
-        </optgroup>
-        <optgroup label="Namen mit C">
-          <option label="Caesar">Caesar</option>
-          <option label="Christiane">Christiane</option>
-          <option label="Christian">Christian</option>
+        <optgroup label="Benutzernamen">
         </optgroup>
       </select>
         <button id="btnPersonAbonnieren" onclick="redirectToSubscribePage()">Hinzufügen</button>
