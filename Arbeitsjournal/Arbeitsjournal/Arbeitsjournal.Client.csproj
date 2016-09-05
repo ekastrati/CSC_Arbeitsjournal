@@ -1,3 +1,4 @@
+﻿
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
@@ -95,6 +96,7 @@
     <Content Include="CSS\mitarbeiter.css" />
     <Content Include="CSS\notLoggedIn_StyleSheet.css" />
     <Content Include="blabla.html" />
+    <Content Include="neuerBeitrag.aspx" />
     <Content Include="Passwort.aspx" />
     <Content Include="profil.aspx" />
     <Content Include="CSS\profil.css" />
@@ -144,6 +146,12 @@
     <Compile Include="mitarbeiter.aspx.cs.designer.cs">
       <DependentUpon>mitarbeiter.aspx.cs.cs</DependentUpon>
     </Compile>
+    <Compile Include="neuerBeitrag.aspx.cs">
+      <DependentUpon>neuerBeitrag.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="neuerBeitrag.aspx.designer.cs">
+      <DependentUpon>neuerBeitrag.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Passwort.aspx.cs">
       <DependentUpon>Passwort.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -182,9 +190,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DataLayer\Arbeitsjournal.DataAccess.csproj">
+    <ProjectReference Include="..\DataLayer\DataLayer.csproj">
       <Project>{5d1bfd23-8c8f-4990-814e-76804defe200}</Project>
-      <Name>Arbeitsjournal.DataAccess</Name>
+      <Name>DataLayer</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
@@ -221,5 +229,3 @@
   </Target>
   <Target Name="AfterBuild">
   </Target>
-  -->
-</Project>

@@ -22,9 +22,9 @@
 </head>
 <body>
 
-    <h1>TinyMCE Quick Start Guide</h1>
+    <h1>Neuer Beitrag</h1>
   <form method="post">
-    <textarea id="mytextarea">Hello, World!</textarea>
+    <textarea id="mytextarea">Neuer Beitrag</textarea>
   </form>
 
 </body>
