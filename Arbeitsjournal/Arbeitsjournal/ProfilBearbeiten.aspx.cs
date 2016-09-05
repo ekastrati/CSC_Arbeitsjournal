@@ -47,11 +47,16 @@ namespace Arbeitsjournal
             }
         }
 
+        public void expandQuery(string column, string newValue){
+            query += String.Format("SET `{0}` =  `{1}` ", column, newValue);
+            return; 
+        }
+
         private void DecideWitchDataMustBeChanged()
         {
             if (this.txtUsername.Text != String.Empty)
             {
-                query += "SET `benutzername` = '" + txtUsername.Text + "' ";
+                expandQuery("benutzername", txtUsername.Text);
             }
 
             if (this.txtPrename.Text != String.Empty)

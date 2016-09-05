@@ -2,10 +2,15 @@
 var serverUrl = "http://localhost:50936/rest/api";
 
 $(document).ready(function () {
-    httpGetAsync("/Abonnieren/GetAllPeopleThatISubscribed?benutzerId=6", showAllPersonsInList);
+    createSubscriptionsDropDownList();
 });
 
 var actualSelectedPerson;
+
+function createSubscriptionsDropDownList() {
+    httpGetAsync("/Abonnieren/GetAllPeopleThatISubscribed?benutzername=" + username, showAllPersonsInList);
+    console.log("Aufgerufen");
+}
 
 function redirectToSubscribePage(){
     window.location.href = "../AbonnierePersonen.aspx";
