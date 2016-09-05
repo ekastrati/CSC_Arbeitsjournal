@@ -9,15 +9,16 @@ var peopleList;
 
 function setResultatOnPeopleList(resultat) {
     console.log("resultat: ", resultat);
-    peopleObject = JSON.parse(resultat);
+    peopleToPossiblySubscribeObject = JSON.parse(resultat);
     //subscribeBox.appendChild(select);
     // Constructor arguments:  text, value, defaultSelected, selected
     // Example: select.appendChild(new Option("my label 1", "my value 1", false, false));
   
-    var peopleListSize = Object.keys(peopleObject).length;
+    var peopleListSize = Object.keys(peopleToPossiblySubscribeObject).length;
     for (i = 0; i < peopleListSize; i++) {
-        selectPeople.appendChild(new Option(peopleObject[i]["Username"], peopleObject[i]["Username"], false, false));
+        selectPeople.appendChild(new Option(peopleToPossiblySubscribeObject[i]["Username"], peopleToPossiblySubscribeObject[i]["Username"], false, false));
     }
+    console.log(peopleToPossiblySubscribeObject);
 }
 
 function unnötig(resultat){

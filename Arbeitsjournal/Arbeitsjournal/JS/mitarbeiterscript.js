@@ -20,14 +20,14 @@ function redirectToSubscribePage(){
 function showAllPersonsInList(resultat) {
     select = document.getElementById("abonniertDropdown");
     console.log("resultat: ", resultat);
-    peopleObject = JSON.parse(resultat);
+    peopleSubscribedObject = JSON.parse(resultat);
     //subscribeBox.appendChild(select);
     // Constructor arguments:  text, value, defaultSelected, selected
     // Example: select.appendChild(new Option("my label 1", "my value 1", false, false));
 
-    var peopleListSize = Object.keys(peopleObject).length;
+    var peopleListSize = Object.keys(peopleSubscribedObject).length;
     for (i = 0; i < peopleListSize; i++) {
-        select.appendChild(new Option(peopleObject[i]["Username"], peopleObject[i]["Username"], false, false));
+        select.appendChild(new Option(peopleSubscribedObject[i]["Username"], peopleSubscribedObject[i]["Username"], false, false));
     }
 }
 

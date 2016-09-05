@@ -25,7 +25,7 @@ namespace Arbeitsjournal.WebService.Controllers
         {
             connector = new DataConnector();
             DataTable dataTable;
-            
+
             try
             {
                 if (thisUserToFind)
@@ -38,14 +38,11 @@ namespace Arbeitsjournal.WebService.Controllers
                     {
                         // 1. BenutzerMapper.MapBenutzer (DataRow benutzerEntry) -> Benutzer objekt zurück -> arrayList.add(
 
-                        foreach (DataColumn dc in dataTable.Columns)
-                        {
-                            benutzer.Id = (int)dr["idBenutzer"];
-                            benutzer.Username = (string)dr["benutzername"];
-                            benutzer.Prename = (string)dr["vorname"];
-                            benutzer.Name = (string)dr["name"];
-                            benutzer.Email = (string)dr["email"];
-                        }
+                        benutzer.Id = (int)dr["idBenutzer"];
+                        benutzer.Username = (string)dr["benutzername"];
+                        benutzer.Prename = (string)dr["vorname"];
+                        benutzer.Name = (string)dr["name"];
+                        benutzer.Email = (string)dr["email"];
                     }
                     return Ok(benutzer);
                 }
@@ -55,16 +52,13 @@ namespace Arbeitsjournal.WebService.Controllers
                     List<Benutzer> benutzerList = new List<Benutzer>();
                     foreach (DataRow dr in dataTable.Rows)
                     {
-                        foreach (DataColumn dc in dataTable.Columns)
-                        {
-                            Benutzer benutzer = new Benutzer();
-                            benutzer.Id = (int)dr["idBenutzer"];
-                            benutzer.Username = (string)dr["benutzername"];
-                            benutzer.Prename = (string)dr["vorname"];
-                            benutzer.Name = (string)dr["name"];
-                            benutzer.Email = (string)dr["email"];
-                            benutzerList.Add(benutzer);
-                        }
+                        Benutzer benutzer = new Benutzer();
+                        benutzer.Id = (int)dr["idBenutzer"];
+                        benutzer.Username = (string)dr["benutzername"];
+                        benutzer.Prename = (string)dr["vorname"];
+                        benutzer.Name = (string)dr["name"];
+                        benutzer.Email = (string)dr["email"];
+                        benutzerList.Add(benutzer);
                     }
                     return Ok(benutzerList);
                 }
@@ -98,11 +92,8 @@ namespace Arbeitsjournal.WebService.Controllers
             Benutzer benutzer = new Benutzer();
             foreach (DataRow dr in dataTable.Rows)
             {
-                foreach (DataColumn dc in dataTable.Columns)
-                {
-                    benutzer.Id = (int)dr["idBenutzer"];
-                    benutzer.Username = (string)dr["benutzername"];
-                }
+                benutzer.Id = (int)dr["idBenutzer"];
+                benutzer.Username = (string)dr["benutzername"];
             }
             return Ok(benutzer);
         }
